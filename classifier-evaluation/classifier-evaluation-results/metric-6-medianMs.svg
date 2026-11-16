@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1118" viewBox="0 0 900 1118"><rect width="900" height="1118" fill="#fff"/>
+<text x="20" y="28" font-family="sans-serif" fill="#222" font-size="18" font-weight="bold">Median latency (ms) — all models and runs</text>
+<text x="20" y="46" font-family="sans-serif" font-size="11" fill="#666">Rows grouped by model, one row per context size. Same scale on every row.</text>
+<rect x="20" y="58" width="12" height="12" fill="#4e79a7"/><text x="38" y="68" font-family="sans-serif" font-size="12" fill="#222" >Median ms</text>
+<line x1="260" x2="260" y1="82" y2="1098" stroke="#e5e5e5"/><text x="260" y="78" font-family="sans-serif" text-anchor="middle" font-size="10" fill="#666">0</text>
+<line x1="400" x2="400" y1="82" y2="1098" stroke="#e5e5e5"/><text x="400" y="78" font-family="sans-serif" text-anchor="middle" font-size="10" fill="#666">12250</text>
+<line x1="540" x2="540" y1="82" y2="1098" stroke="#e5e5e5"/><text x="540" y="78" font-family="sans-serif" text-anchor="middle" font-size="10" fill="#666">24500</text>
+<line x1="680" x2="680" y1="82" y2="1098" stroke="#e5e5e5"/><text x="680" y="78" font-family="sans-serif" text-anchor="middle" font-size="10" fill="#666">36750</text>
+<line x1="820" x2="820" y1="82" y2="1098" stroke="#e5e5e5"/><text x="820" y="78" font-family="sans-serif" text-anchor="middle" font-size="10" fill="#666">49000</text>
+<text x="20" y="102" font-family="sans-serif" font-size="12" fill="#222" >qwen3.5:2b - ctx 2048</text>
+<rect x="260" y="90" width="20.788571428571426" height="12" fill="#4e79a7"/><text x="284.7885714285714" y="100" font-family="sans-serif" fill="#222" font-size="10">1819</text>
+<text x="20" y="130" font-family="sans-serif" font-size="12" fill="#222" >qwen3.5:2b - ctx 4096</text>
+<rect x="260" y="118" width="9.794285714285714" height="12" fill="#4e79a7"/><text x="273.7942857142857" y="128" font-family="sans-serif" fill="#222" font-size="10">857</text>
+<text x="20" y="158" font-family="sans-serif" font-size="12" fill="#222" >qwen3.5:2b - ctx 8192</text>
+<rect x="260" y="146" width="21.06285714285714" height="12" fill="#4e79a7"/><text x="285.0628571428571" y="156" font-family="sans-serif" fill="#222" font-size="10">1843</text>
+<text x="20" y="186" font-family="sans-serif" font-size="12" fill="#222" >qwen3.5:2b - ctx 16384</text>
+<rect x="260" y="174" width="26.01142857142857" height="12" fill="#4e79a7"/><text x="290.01142857142855" y="184" font-family="sans-serif" fill="#222" font-size="10">2276</text>
+<line x1="20" x2="880" y1="199" y2="199" stroke="#999"/>
+<text x="20" y="214" font-family="sans-serif" font-size="12" fill="#222" >qwen3.5:4b - ctx 2048</text>
+<rect x="260" y="202" width="53.028571428571425" height="12" fill="#4e79a7"/><text x="317.0285714285714" y="212" font-family="sans-serif" fill="#222" font-size="10">4640</text>
+<text x="20" y="242" font-family="sans-serif" font-size="12" fill="#222" >qwen3.5:4b - ctx 4096</text>
+<rect x="260" y="230" width="27.611428571428572" height="12" fill="#4e79a7"/><text x="291.6114285714286" y="240" font-family="sans-serif" fill="#222" font-size="10">2416</text>
+<text x="20" y="270" font-family="sans-serif" font-size="12" fill="#222" >qwen3.5:4b - ctx 8192</text>
+<rect x="260" y="258" width="47.519999999999996" height="12" fill="#4e79a7"/><text x="311.52" y="268" font-family="sans-serif" fill="#222" font-size="10">4158</text>
+<text x="20" y="298" font-family="sans-serif" font-size="12" fill="#222" >qwen3.5:4b - ctx 16384</text>
+<rect x="260" y="286" width="111.42857142857143" height="12" fill="#4e79a7"/><text x="375.42857142857144" y="296" font-family="sans-serif" fill="#222" font-size="10">9750</text>
+<line x1="20" x2="880" y1="311" y2="311" stroke="#999"/>
+<text x="20" y="326" font-family="sans-serif" font-size="12" fill="#222" >qwen2.5-coder:3b - ctx 2048</text>
+<rect x="260" y="314" width="20.834285714285716" height="12" fill="#4e79a7"/><text x="284.8342857142857" y="324" font-family="sans-serif" fill="#222" font-size="10">1823</text>
+<text x="20" y="354" font-family="sans-serif" font-size="12" fill="#222" >qwen2.5-coder:3b - ctx 4096</text>
+<rect x="260" y="342" width="19.337142857142858" height="12" fill="#4e79a7"/><text x="283.33714285714285" y="352" font-family="sans-serif" fill="#222" font-size="10">1692</text>
+<text x="20" y="382" font-family="sans-serif" font-size="12" fill="#222" >qwen2.5-coder:3b - ctx 8192</text>
+<rect x="260" y="370" width="20.788571428571426" height="12" fill="#4e79a7"/><text x="284.7885714285714" y="380" font-family="sans-serif" fill="#222" font-size="10">1819</text>
+<text x="20" y="410" font-family="sans-serif" font-size="12" fill="#222" >qwen2.5-coder:3b - ctx 16384</text>
+<rect x="260" y="398" width="24.502857142857142" height="12" fill="#4e79a7"/><text x="288.5028571428571" y="408" font-family="sans-serif" fill="#222" font-size="10">2144</text>
+<line x1="20" x2="880" y1="423" y2="423" stroke="#999"/>
+<text x="20" y="438" font-family="sans-serif" font-size="12" fill="#222" >llama3.2:3b - ctx 2048</text>
+<rect x="260" y="426" width="16.377142857142857" height="12" fill="#4e79a7"/><text x="280.37714285714287" y="436" font-family="sans-serif" fill="#222" font-size="10">1433</text>
+<text x="20" y="466" font-family="sans-serif" font-size="12" fill="#222" >llama3.2:3b - ctx 4096</text>
+<rect x="260" y="454" width="16.605714285714285" height="12" fill="#4e79a7"/><text x="280.60571428571427" y="464" font-family="sans-serif" fill="#222" font-size="10">1453</text>
+<text x="20" y="494" font-family="sans-serif" font-size="12" fill="#222" >llama3.2:3b - ctx 8192</text>
+<rect x="260" y="482" width="17.22285714285714" height="12" fill="#4e79a7"/><text x="281.22285714285715" y="492" font-family="sans-serif" fill="#222" font-size="10">1507</text>
+<text x="20" y="522" font-family="sans-serif" font-size="12" fill="#222" >llama3.2:3b - ctx 16384</text>
+<rect x="260" y="510" width="32.034285714285716" height="12" fill="#4e79a7"/><text x="296.0342857142857" y="520" font-family="sans-serif" fill="#222" font-size="10">2803</text>
+<line x1="20" x2="880" y1="535" y2="535" stroke="#999"/>
+<text x="20" y="550" font-family="sans-serif" font-size="12" fill="#222" >gemma3:4b - ctx 2048</text>
+<rect x="260" y="538" width="26.205714285714283" height="12" fill="#4e79a7"/><text x="290.2057142857143" y="548" font-family="sans-serif" fill="#222" font-size="10">2293</text>
+<text x="20" y="578" font-family="sans-serif" font-size="12" fill="#222" >gemma3:4b - ctx 4096</text>
+<rect x="260" y="566" width="24.754285714285714" height="12" fill="#4e79a7"/><text x="288.75428571428574" y="576" font-family="sans-serif" fill="#222" font-size="10">2166</text>
+<text x="20" y="606" font-family="sans-serif" font-size="12" fill="#222" >gemma3:4b - ctx 8192</text>
+<rect x="260" y="594" width="30.32" height="12" fill="#4e79a7"/><text x="294.32" y="604" font-family="sans-serif" fill="#222" font-size="10">2653</text>
+<text x="20" y="634" font-family="sans-serif" font-size="12" fill="#222" >gemma3:4b - ctx 16384</text>
+<rect x="260" y="622" width="48.4" height="12" fill="#4e79a7"/><text x="312.4" y="632" font-family="sans-serif" fill="#222" font-size="10">4235</text>
+<line x1="20" x2="880" y1="647" y2="647" stroke="#999"/>
+<text x="20" y="662" font-family="sans-serif" font-size="12" fill="#222" >phi4-mini - ctx 2048</text>
+<rect x="260" y="650" width="25.74857142857143" height="12" fill="#4e79a7"/><text x="289.74857142857144" y="660" font-family="sans-serif" fill="#222" font-size="10">2253</text>
+<text x="20" y="690" font-family="sans-serif" font-size="12" fill="#222" >phi4-mini - ctx 4096</text>
+<rect x="260" y="678" width="25.371428571428574" height="12" fill="#4e79a7"/><text x="289.37142857142857" y="688" font-family="sans-serif" fill="#222" font-size="10">2220</text>
+<text x="20" y="718" font-family="sans-serif" font-size="12" fill="#222" >phi4-mini - ctx 8192</text>
+<rect x="260" y="706" width="30.662857142857145" height="12" fill="#4e79a7"/><text x="294.66285714285715" y="716" font-family="sans-serif" fill="#222" font-size="10">2683</text>
+<text x="20" y="746" font-family="sans-serif" font-size="12" fill="#222" >phi4-mini - ctx 16384</text>
+<rect x="260" y="734" width="60.70857142857143" height="12" fill="#4e79a7"/><text x="324.7085714285714" y="744" font-family="sans-serif" fill="#222" font-size="10">5312</text>
+<line x1="20" x2="880" y1="759" y2="759" stroke="#999"/>
+<text x="20" y="774" font-family="sans-serif" font-size="12" fill="#222" >granite3.3:2b - ctx 2048</text>
+<rect x="260" y="762" width="16.17142857142857" height="12" fill="#4e79a7"/><text x="280.1714285714286" y="772" font-family="sans-serif" fill="#222" font-size="10">1415</text>
+<text x="20" y="802" font-family="sans-serif" font-size="12" fill="#222" >granite3.3:2b - ctx 4096</text>
+<rect x="260" y="790" width="16.068571428571428" height="12" fill="#4e79a7"/><text x="280.06857142857143" y="800" font-family="sans-serif" fill="#222" font-size="10">1406</text>
+<text x="20" y="830" font-family="sans-serif" font-size="12" fill="#222" >granite3.3:2b - ctx 8192</text>
+<rect x="260" y="818" width="16.114285714285714" height="12" fill="#4e79a7"/><text x="280.1142857142857" y="828" font-family="sans-serif" fill="#222" font-size="10">1410</text>
+<text x="20" y="858" font-family="sans-serif" font-size="12" fill="#222" >granite3.3:2b - ctx 16384</text>
+<rect x="260" y="846" width="18.02285714285714" height="12" fill="#4e79a7"/><text x="282.02285714285716" y="856" font-family="sans-serif" fill="#222" font-size="10">1577</text>
+<line x1="20" x2="880" y1="871" y2="871" stroke="#999"/>
+<text x="20" y="886" font-family="sans-serif" font-size="12" fill="#222" >qwen3:4b - ctx 2048</text>
+<rect x="260" y="874" width="27.325714285714284" height="12" fill="#4e79a7"/><text x="291.3257142857143" y="884" font-family="sans-serif" fill="#222" font-size="10">2391</text>
+<text x="20" y="914" font-family="sans-serif" font-size="12" fill="#222" >qwen3:4b - ctx 4096</text>
+<rect x="260" y="902" width="29.165714285714287" height="12" fill="#4e79a7"/><text x="293.1657142857143" y="912" font-family="sans-serif" fill="#222" font-size="10">2552</text>
+<text x="20" y="942" font-family="sans-serif" font-size="12" fill="#222" >qwen3:4b - ctx 8192</text>
+<rect x="260" y="930" width="32.21714285714285" height="12" fill="#4e79a7"/><text x="296.21714285714285" y="940" font-family="sans-serif" fill="#222" font-size="10">2819</text>
+<text x="20" y="970" font-family="sans-serif" font-size="12" fill="#222" >qwen3:4b - ctx 16384</text>
+<rect x="260" y="958" width="63.52" height="12" fill="#4e79a7"/><text x="327.52" y="968" font-family="sans-serif" fill="#222" font-size="10">5558</text>
+<line x1="20" x2="880" y1="983" y2="983" stroke="#999"/>
+<text x="20" y="998" font-family="sans-serif" font-size="12" fill="#222" >mistral:7b - ctx 2048</text>
+<rect x="260" y="986" width="70.72" height="12" fill="#4e79a7"/><text x="334.72" y="996" font-family="sans-serif" fill="#222" font-size="10">6188</text>
+<text x="20" y="1026" font-family="sans-serif" font-size="12" fill="#222" >mistral:7b - ctx 4096</text>
+<rect x="260" y="1014" width="71.87428571428572" height="12" fill="#4e79a7"/><text x="335.87428571428575" y="1024" font-family="sans-serif" fill="#222" font-size="10">6289</text>
+<text x="20" y="1054" font-family="sans-serif" font-size="12" fill="#222" >mistral:7b - ctx 8192</text>
+<rect x="260" y="1042" width="111.42857142857143" height="12" fill="#4e79a7"/><text x="375.42857142857144" y="1052" font-family="sans-serif" fill="#222" font-size="10">9750</text>
+<text x="20" y="1082" font-family="sans-serif" font-size="12" fill="#222" >mistral:7b - ctx 16384</text>
+<rect x="260" y="1070" width="133.18857142857144" height="12" fill="#4e79a7"/><text x="397.18857142857144" y="1080" font-family="sans-serif" fill="#222" font-size="10">11654</text>
+</svg>

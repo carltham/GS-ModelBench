@@ -1,0 +1,1280 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="10136" viewBox="0 0 900 10136"><rect width="900" height="10136" fill="#fff"/>
+<text x="20" y="28" font-family="sans-serif" fill="#222" font-size="18" font-weight="bold">Results per request kind: by metric, then model, then kind (%)</text>
+<text x="20" y="46" font-family="sans-serif" font-size="11" fill="#666">Sections: Valid JSON, Kind accuracy, Difficulty exact. Within each: one block per model, one group per request kind, one bar per context size. 0-100 scale.</text>
+<rect x="20" y="58" width="12" height="12" fill="#4e79a7"/><text x="38" y="68" font-family="sans-serif" fill="#222" font-size="11">ctx 2048</text>
+<rect x="150" y="58" width="12" height="12" fill="#f28e2b"/><text x="168" y="68" font-family="sans-serif" fill="#222" font-size="11">ctx 4096</text>
+<rect x="280" y="58" width="12" height="12" fill="#59a14f"/><text x="298" y="68" font-family="sans-serif" fill="#222" font-size="11">ctx 8192</text>
+<rect x="410" y="58" width="12" height="12" fill="#e15759"/><text x="428" y="68" font-family="sans-serif" fill="#222" font-size="11">ctx 16384</text>
+<rect x="20" y="90" width="860" height="24" fill="#2f3b4c"/><text x="28" y="106" font-family="sans-serif" font-weight="bold" fill="#fff" font-size="13">VALID JSON</text>
+<rect x="20" y="120" width="860" height="18" fill="#dfe6ee"/><text x="28" y="133" font-family="sans-serif" font-size="12" fill="#222" font-weight="bold">qwen3.5:2b</text>
+<text x="130" y="133" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">0</text>
+<text x="305" y="133" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">25</text>
+<text x="480" y="133" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">50</text>
+<text x="655" y="133" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">75</text>
+<text x="830" y="133" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">100</text>
+<text x="28" y="170" font-family="sans-serif" font-size="12" fill="#222" >chat</text>
+<rect x="130" y="142" width="350" height="11" fill="#4e79a7"/><text x="484" y="151" font-family="sans-serif" fill="#222" font-size="9">50%</text>
+<rect x="130" y="154" width="350" height="11" fill="#f28e2b"/><text x="484" y="163" font-family="sans-serif" fill="#222" font-size="9">50%</text>
+<rect x="130" y="166" width="350" height="11" fill="#59a14f"/><text x="484" y="175" font-family="sans-serif" fill="#222" font-size="9">50%</text>
+<rect x="130" y="178" width="350" height="11" fill="#e15759"/><text x="484" y="187" font-family="sans-serif" fill="#222" font-size="9">50%</text>
+<line x1="20" x2="880" y1="194" y2="194" stroke="#eee"/>
+<text x="28" y="226" font-family="sans-serif" font-size="12" fill="#222" >translation</text>
+<rect x="130" y="198" width="231" height="11" fill="#4e79a7"/><text x="365" y="207" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<rect x="130" y="210" width="231" height="11" fill="#f28e2b"/><text x="365" y="219" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<rect x="130" y="222" width="231" height="11" fill="#59a14f"/><text x="365" y="231" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<rect x="130" y="234" width="231" height="11" fill="#e15759"/><text x="365" y="243" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<line x1="20" x2="880" y1="250" y2="250" stroke="#eee"/>
+<text x="28" y="282" font-family="sans-serif" font-size="12" fill="#222" >summarisation</text>
+<rect x="130" y="254" width="0" height="11" fill="#4e79a7"/><text x="134" y="263" font-family="sans-serif" fill="#222" font-size="9">0%</text>
+<rect x="130" y="266" width="0" height="11" fill="#f28e2b"/><text x="134" y="275" font-family="sans-serif" fill="#222" font-size="9">0%</text>
+<rect x="130" y="278" width="0" height="11" fill="#59a14f"/><text x="134" y="287" font-family="sans-serif" fill="#222" font-size="9">0%</text>
+<rect x="130" y="290" width="0" height="11" fill="#e15759"/><text x="134" y="299" font-family="sans-serif" fill="#222" font-size="9">0%</text>
+<line x1="20" x2="880" y1="306" y2="306" stroke="#eee"/>
+<text x="28" y="338" font-family="sans-serif" font-size="12" fill="#222" >extraction</text>
+<rect x="130" y="310" width="0" height="11" fill="#4e79a7"/><text x="134" y="319" font-family="sans-serif" fill="#222" font-size="9">0%</text>
+<rect x="130" y="322" width="0" height="11" fill="#f28e2b"/><text x="134" y="331" font-family="sans-serif" fill="#222" font-size="9">0%</text>
+<rect x="130" y="334" width="0" height="11" fill="#59a14f"/><text x="134" y="343" font-family="sans-serif" fill="#222" font-size="9">0%</text>
+<rect x="130" y="346" width="0" height="11" fill="#e15759"/><text x="134" y="355" font-family="sans-serif" fill="#222" font-size="9">0%</text>
+<line x1="20" x2="880" y1="362" y2="362" stroke="#eee"/>
+<text x="28" y="394" font-family="sans-serif" font-size="12" fill="#222" >code</text>
+<rect x="130" y="366" width="119.00000000000001" height="11" fill="#4e79a7"/><text x="253" y="375" font-family="sans-serif" fill="#222" font-size="9">17%</text>
+<rect x="130" y="378" width="119.00000000000001" height="11" fill="#f28e2b"/><text x="253" y="387" font-family="sans-serif" fill="#222" font-size="9">17%</text>
+<rect x="130" y="390" width="119.00000000000001" height="11" fill="#59a14f"/><text x="253" y="399" font-family="sans-serif" fill="#222" font-size="9">17%</text>
+<rect x="130" y="402" width="119.00000000000001" height="11" fill="#e15759"/><text x="253" y="411" font-family="sans-serif" fill="#222" font-size="9">17%</text>
+<line x1="20" x2="880" y1="418" y2="418" stroke="#eee"/>
+<text x="28" y="450" font-family="sans-serif" font-size="12" fill="#222" >reasoning</text>
+<rect x="130" y="422" width="420" height="11" fill="#4e79a7"/><text x="554" y="431" font-family="sans-serif" fill="#222" font-size="9">60%</text>
+<rect x="130" y="434" width="420" height="11" fill="#f28e2b"/><text x="554" y="443" font-family="sans-serif" fill="#222" font-size="9">60%</text>
+<rect x="130" y="446" width="420" height="11" fill="#59a14f"/><text x="554" y="455" font-family="sans-serif" fill="#222" font-size="9">60%</text>
+<rect x="130" y="458" width="420" height="11" fill="#e15759"/><text x="554" y="467" font-family="sans-serif" fill="#222" font-size="9">60%</text>
+<line x1="20" x2="880" y1="474" y2="474" stroke="#eee"/>
+<line x1="130" x2="130" y1="142" y2="478" stroke="#e5e5e5"/>
+<line x1="305" x2="305" y1="142" y2="478" stroke="#e5e5e5"/>
+<line x1="480" x2="480" y1="142" y2="478" stroke="#e5e5e5"/>
+<line x1="655" x2="655" y1="142" y2="478" stroke="#e5e5e5"/>
+<line x1="830" x2="830" y1="142" y2="478" stroke="#e5e5e5"/>
+<rect x="20" y="488" width="860" height="18" fill="#dfe6ee"/><text x="28" y="501" font-family="sans-serif" font-size="12" fill="#222" font-weight="bold">qwen3.5:4b</text>
+<text x="130" y="501" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">0</text>
+<text x="305" y="501" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">25</text>
+<text x="480" y="501" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">50</text>
+<text x="655" y="501" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">75</text>
+<text x="830" y="501" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">100</text>
+<text x="28" y="538" font-family="sans-serif" font-size="12" fill="#222" >chat</text>
+<rect x="130" y="510" width="700" height="11" fill="#4e79a7"/><text x="834" y="519" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="522" width="700" height="11" fill="#f28e2b"/><text x="834" y="531" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="534" width="700" height="11" fill="#59a14f"/><text x="834" y="543" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="546" width="700" height="11" fill="#e15759"/><text x="834" y="555" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<line x1="20" x2="880" y1="562" y2="562" stroke="#eee"/>
+<text x="28" y="594" font-family="sans-serif" font-size="12" fill="#222" >translation</text>
+<rect x="130" y="566" width="700" height="11" fill="#4e79a7"/><text x="834" y="575" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="578" width="700" height="11" fill="#f28e2b"/><text x="834" y="587" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="590" width="700" height="11" fill="#59a14f"/><text x="834" y="599" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="602" width="700" height="11" fill="#e15759"/><text x="834" y="611" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<line x1="20" x2="880" y1="618" y2="618" stroke="#eee"/>
+<text x="28" y="650" font-family="sans-serif" font-size="12" fill="#222" >summarisation</text>
+<rect x="130" y="622" width="700" height="11" fill="#4e79a7"/><text x="834" y="631" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="634" width="700" height="11" fill="#f28e2b"/><text x="834" y="643" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="646" width="700" height="11" fill="#59a14f"/><text x="834" y="655" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="658" width="700" height="11" fill="#e15759"/><text x="834" y="667" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<line x1="20" x2="880" y1="674" y2="674" stroke="#eee"/>
+<text x="28" y="706" font-family="sans-serif" font-size="12" fill="#222" >extraction</text>
+<rect x="130" y="678" width="700" height="11" fill="#4e79a7"/><text x="834" y="687" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="690" width="700" height="11" fill="#f28e2b"/><text x="834" y="699" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="702" width="700" height="11" fill="#59a14f"/><text x="834" y="711" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="714" width="700" height="11" fill="#e15759"/><text x="834" y="723" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<line x1="20" x2="880" y1="730" y2="730" stroke="#eee"/>
+<text x="28" y="762" font-family="sans-serif" font-size="12" fill="#222" >code</text>
+<rect x="130" y="734" width="700" height="11" fill="#4e79a7"/><text x="834" y="743" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="746" width="700" height="11" fill="#f28e2b"/><text x="834" y="755" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="758" width="700" height="11" fill="#59a14f"/><text x="834" y="767" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="770" width="700" height="11" fill="#e15759"/><text x="834" y="779" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<line x1="20" x2="880" y1="786" y2="786" stroke="#eee"/>
+<text x="28" y="818" font-family="sans-serif" font-size="12" fill="#222" >reasoning</text>
+<rect x="130" y="790" width="700" height="11" fill="#4e79a7"/><text x="834" y="799" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="802" width="700" height="11" fill="#f28e2b"/><text x="834" y="811" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="814" width="700" height="11" fill="#59a14f"/><text x="834" y="823" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="826" width="700" height="11" fill="#e15759"/><text x="834" y="835" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<line x1="20" x2="880" y1="842" y2="842" stroke="#eee"/>
+<line x1="130" x2="130" y1="510" y2="846" stroke="#e5e5e5"/>
+<line x1="305" x2="305" y1="510" y2="846" stroke="#e5e5e5"/>
+<line x1="480" x2="480" y1="510" y2="846" stroke="#e5e5e5"/>
+<line x1="655" x2="655" y1="510" y2="846" stroke="#e5e5e5"/>
+<line x1="830" x2="830" y1="510" y2="846" stroke="#e5e5e5"/>
+<rect x="20" y="856" width="860" height="18" fill="#dfe6ee"/><text x="28" y="869" font-family="sans-serif" font-size="12" fill="#222" font-weight="bold">qwen2.5-coder:3b</text>
+<text x="130" y="869" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">0</text>
+<text x="305" y="869" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">25</text>
+<text x="480" y="869" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">50</text>
+<text x="655" y="869" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">75</text>
+<text x="830" y="869" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">100</text>
+<text x="28" y="906" font-family="sans-serif" font-size="12" fill="#222" >chat</text>
+<rect x="130" y="878" width="700" height="11" fill="#4e79a7"/><text x="834" y="887" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="890" width="700" height="11" fill="#f28e2b"/><text x="834" y="899" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="902" width="700" height="11" fill="#59a14f"/><text x="834" y="911" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="914" width="700" height="11" fill="#e15759"/><text x="834" y="923" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<line x1="20" x2="880" y1="930" y2="930" stroke="#eee"/>
+<text x="28" y="962" font-family="sans-serif" font-size="12" fill="#222" >translation</text>
+<rect x="130" y="934" width="469" height="11" fill="#4e79a7"/><text x="603" y="943" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="946" width="469" height="11" fill="#f28e2b"/><text x="603" y="955" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="958" width="469" height="11" fill="#59a14f"/><text x="603" y="967" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="970" width="469" height="11" fill="#e15759"/><text x="603" y="979" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<line x1="20" x2="880" y1="986" y2="986" stroke="#eee"/>
+<text x="28" y="1018" font-family="sans-serif" font-size="12" fill="#222" >summarisation</text>
+<rect x="130" y="990" width="231" height="11" fill="#4e79a7"/><text x="365" y="999" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<rect x="130" y="1002" width="231" height="11" fill="#f28e2b"/><text x="365" y="1011" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<rect x="130" y="1014" width="231" height="11" fill="#59a14f"/><text x="365" y="1023" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<rect x="130" y="1026" width="231" height="11" fill="#e15759"/><text x="365" y="1035" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<line x1="20" x2="880" y1="1042" y2="1042" stroke="#eee"/>
+<text x="28" y="1074" font-family="sans-serif" font-size="12" fill="#222" >extraction</text>
+<rect x="130" y="1046" width="469" height="11" fill="#4e79a7"/><text x="603" y="1055" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="1058" width="469" height="11" fill="#f28e2b"/><text x="603" y="1067" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="1070" width="469" height="11" fill="#59a14f"/><text x="603" y="1079" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="1082" width="469" height="11" fill="#e15759"/><text x="603" y="1091" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<line x1="20" x2="880" y1="1098" y2="1098" stroke="#eee"/>
+<text x="28" y="1130" font-family="sans-serif" font-size="12" fill="#222" >code</text>
+<rect x="130" y="1102" width="700" height="11" fill="#4e79a7"/><text x="834" y="1111" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="1114" width="700" height="11" fill="#f28e2b"/><text x="834" y="1123" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="1126" width="700" height="11" fill="#59a14f"/><text x="834" y="1135" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="1138" width="700" height="11" fill="#e15759"/><text x="834" y="1147" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<line x1="20" x2="880" y1="1154" y2="1154" stroke="#eee"/>
+<text x="28" y="1186" font-family="sans-serif" font-size="12" fill="#222" >reasoning</text>
+<rect x="130" y="1158" width="700" height="11" fill="#4e79a7"/><text x="834" y="1167" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="1170" width="700" height="11" fill="#f28e2b"/><text x="834" y="1179" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="1182" width="700" height="11" fill="#59a14f"/><text x="834" y="1191" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="1194" width="700" height="11" fill="#e15759"/><text x="834" y="1203" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<line x1="20" x2="880" y1="1210" y2="1210" stroke="#eee"/>
+<line x1="130" x2="130" y1="878" y2="1214" stroke="#e5e5e5"/>
+<line x1="305" x2="305" y1="878" y2="1214" stroke="#e5e5e5"/>
+<line x1="480" x2="480" y1="878" y2="1214" stroke="#e5e5e5"/>
+<line x1="655" x2="655" y1="878" y2="1214" stroke="#e5e5e5"/>
+<line x1="830" x2="830" y1="878" y2="1214" stroke="#e5e5e5"/>
+<rect x="20" y="1224" width="860" height="18" fill="#dfe6ee"/><text x="28" y="1237" font-family="sans-serif" font-size="12" fill="#222" font-weight="bold">llama3.2:3b</text>
+<text x="130" y="1237" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">0</text>
+<text x="305" y="1237" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">25</text>
+<text x="480" y="1237" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">50</text>
+<text x="655" y="1237" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">75</text>
+<text x="830" y="1237" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">100</text>
+<text x="28" y="1274" font-family="sans-serif" font-size="12" fill="#222" >chat</text>
+<rect x="130" y="1246" width="700" height="11" fill="#4e79a7"/><text x="834" y="1255" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="1258" width="700" height="11" fill="#f28e2b"/><text x="834" y="1267" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="1270" width="700" height="11" fill="#59a14f"/><text x="834" y="1279" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="1282" width="700" height="11" fill="#e15759"/><text x="834" y="1291" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<line x1="20" x2="880" y1="1298" y2="1298" stroke="#eee"/>
+<text x="28" y="1330" font-family="sans-serif" font-size="12" fill="#222" >translation</text>
+<rect x="130" y="1302" width="469" height="11" fill="#4e79a7"/><text x="603" y="1311" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="1314" width="469" height="11" fill="#f28e2b"/><text x="603" y="1323" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="1326" width="469" height="11" fill="#59a14f"/><text x="603" y="1335" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="1338" width="469" height="11" fill="#e15759"/><text x="603" y="1347" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<line x1="20" x2="880" y1="1354" y2="1354" stroke="#eee"/>
+<text x="28" y="1386" font-family="sans-serif" font-size="12" fill="#222" >summarisation</text>
+<rect x="130" y="1358" width="700" height="11" fill="#4e79a7"/><text x="834" y="1367" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="1370" width="700" height="11" fill="#f28e2b"/><text x="834" y="1379" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="1382" width="700" height="11" fill="#59a14f"/><text x="834" y="1391" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="1394" width="700" height="11" fill="#e15759"/><text x="834" y="1403" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<line x1="20" x2="880" y1="1410" y2="1410" stroke="#eee"/>
+<text x="28" y="1442" font-family="sans-serif" font-size="12" fill="#222" >extraction</text>
+<rect x="130" y="1414" width="231" height="11" fill="#4e79a7"/><text x="365" y="1423" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<rect x="130" y="1426" width="231" height="11" fill="#f28e2b"/><text x="365" y="1435" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<rect x="130" y="1438" width="231" height="11" fill="#59a14f"/><text x="365" y="1447" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<rect x="130" y="1450" width="231" height="11" fill="#e15759"/><text x="365" y="1459" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<line x1="20" x2="880" y1="1466" y2="1466" stroke="#eee"/>
+<text x="28" y="1498" font-family="sans-serif" font-size="12" fill="#222" >code</text>
+<rect x="130" y="1470" width="581" height="11" fill="#4e79a7"/><text x="715" y="1479" font-family="sans-serif" fill="#222" font-size="9">83%</text>
+<rect x="130" y="1482" width="581" height="11" fill="#f28e2b"/><text x="715" y="1491" font-family="sans-serif" fill="#222" font-size="9">83%</text>
+<rect x="130" y="1494" width="581" height="11" fill="#59a14f"/><text x="715" y="1503" font-family="sans-serif" fill="#222" font-size="9">83%</text>
+<rect x="130" y="1506" width="581" height="11" fill="#e15759"/><text x="715" y="1515" font-family="sans-serif" fill="#222" font-size="9">83%</text>
+<line x1="20" x2="880" y1="1522" y2="1522" stroke="#eee"/>
+<text x="28" y="1554" font-family="sans-serif" font-size="12" fill="#222" >reasoning</text>
+<rect x="130" y="1526" width="560" height="11" fill="#4e79a7"/><text x="694" y="1535" font-family="sans-serif" fill="#222" font-size="9">80%</text>
+<rect x="130" y="1538" width="560" height="11" fill="#f28e2b"/><text x="694" y="1547" font-family="sans-serif" fill="#222" font-size="9">80%</text>
+<rect x="130" y="1550" width="560" height="11" fill="#59a14f"/><text x="694" y="1559" font-family="sans-serif" fill="#222" font-size="9">80%</text>
+<rect x="130" y="1562" width="560" height="11" fill="#e15759"/><text x="694" y="1571" font-family="sans-serif" fill="#222" font-size="9">80%</text>
+<line x1="20" x2="880" y1="1578" y2="1578" stroke="#eee"/>
+<line x1="130" x2="130" y1="1246" y2="1582" stroke="#e5e5e5"/>
+<line x1="305" x2="305" y1="1246" y2="1582" stroke="#e5e5e5"/>
+<line x1="480" x2="480" y1="1246" y2="1582" stroke="#e5e5e5"/>
+<line x1="655" x2="655" y1="1246" y2="1582" stroke="#e5e5e5"/>
+<line x1="830" x2="830" y1="1246" y2="1582" stroke="#e5e5e5"/>
+<rect x="20" y="1592" width="860" height="18" fill="#dfe6ee"/><text x="28" y="1605" font-family="sans-serif" font-size="12" fill="#222" font-weight="bold">gemma3:4b</text>
+<text x="130" y="1605" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">0</text>
+<text x="305" y="1605" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">25</text>
+<text x="480" y="1605" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">50</text>
+<text x="655" y="1605" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">75</text>
+<text x="830" y="1605" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">100</text>
+<text x="28" y="1642" font-family="sans-serif" font-size="12" fill="#222" >chat</text>
+<rect x="130" y="1614" width="700" height="11" fill="#4e79a7"/><text x="834" y="1623" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="1626" width="700" height="11" fill="#f28e2b"/><text x="834" y="1635" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="1638" width="700" height="11" fill="#59a14f"/><text x="834" y="1647" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="1650" width="700" height="11" fill="#e15759"/><text x="834" y="1659" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<line x1="20" x2="880" y1="1666" y2="1666" stroke="#eee"/>
+<text x="28" y="1698" font-family="sans-serif" font-size="12" fill="#222" >translation</text>
+<rect x="130" y="1670" width="700" height="11" fill="#4e79a7"/><text x="834" y="1679" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="1682" width="700" height="11" fill="#f28e2b"/><text x="834" y="1691" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="1694" width="700" height="11" fill="#59a14f"/><text x="834" y="1703" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="1706" width="700" height="11" fill="#e15759"/><text x="834" y="1715" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<line x1="20" x2="880" y1="1722" y2="1722" stroke="#eee"/>
+<text x="28" y="1754" font-family="sans-serif" font-size="12" fill="#222" >summarisation</text>
+<rect x="130" y="1726" width="700" height="11" fill="#4e79a7"/><text x="834" y="1735" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="1738" width="700" height="11" fill="#f28e2b"/><text x="834" y="1747" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="1750" width="700" height="11" fill="#59a14f"/><text x="834" y="1759" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="1762" width="700" height="11" fill="#e15759"/><text x="834" y="1771" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<line x1="20" x2="880" y1="1778" y2="1778" stroke="#eee"/>
+<text x="28" y="1810" font-family="sans-serif" font-size="12" fill="#222" >extraction</text>
+<rect x="130" y="1782" width="700" height="11" fill="#4e79a7"/><text x="834" y="1791" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="1794" width="700" height="11" fill="#f28e2b"/><text x="834" y="1803" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="1806" width="700" height="11" fill="#59a14f"/><text x="834" y="1815" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="1818" width="700" height="11" fill="#e15759"/><text x="834" y="1827" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<line x1="20" x2="880" y1="1834" y2="1834" stroke="#eee"/>
+<text x="28" y="1866" font-family="sans-serif" font-size="12" fill="#222" >code</text>
+<rect x="130" y="1838" width="469" height="11" fill="#4e79a7"/><text x="603" y="1847" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="1850" width="581" height="11" fill="#f28e2b"/><text x="715" y="1859" font-family="sans-serif" fill="#222" font-size="9">83%</text>
+<rect x="130" y="1862" width="469" height="11" fill="#59a14f"/><text x="603" y="1871" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="1874" width="469" height="11" fill="#e15759"/><text x="603" y="1883" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<line x1="20" x2="880" y1="1890" y2="1890" stroke="#eee"/>
+<text x="28" y="1922" font-family="sans-serif" font-size="12" fill="#222" >reasoning</text>
+<rect x="130" y="1894" width="700" height="11" fill="#4e79a7"/><text x="834" y="1903" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="1906" width="700" height="11" fill="#f28e2b"/><text x="834" y="1915" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="1918" width="700" height="11" fill="#59a14f"/><text x="834" y="1927" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="1930" width="700" height="11" fill="#e15759"/><text x="834" y="1939" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<line x1="20" x2="880" y1="1946" y2="1946" stroke="#eee"/>
+<line x1="130" x2="130" y1="1614" y2="1950" stroke="#e5e5e5"/>
+<line x1="305" x2="305" y1="1614" y2="1950" stroke="#e5e5e5"/>
+<line x1="480" x2="480" y1="1614" y2="1950" stroke="#e5e5e5"/>
+<line x1="655" x2="655" y1="1614" y2="1950" stroke="#e5e5e5"/>
+<line x1="830" x2="830" y1="1614" y2="1950" stroke="#e5e5e5"/>
+<rect x="20" y="1960" width="860" height="18" fill="#dfe6ee"/><text x="28" y="1973" font-family="sans-serif" font-size="12" fill="#222" font-weight="bold">phi4-mini</text>
+<text x="130" y="1973" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">0</text>
+<text x="305" y="1973" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">25</text>
+<text x="480" y="1973" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">50</text>
+<text x="655" y="1973" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">75</text>
+<text x="830" y="1973" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">100</text>
+<text x="28" y="2010" font-family="sans-serif" font-size="12" fill="#222" >chat</text>
+<rect x="130" y="1982" width="700" height="11" fill="#4e79a7"/><text x="834" y="1991" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="1994" width="700" height="11" fill="#f28e2b"/><text x="834" y="2003" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="2006" width="700" height="11" fill="#59a14f"/><text x="834" y="2015" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="2018" width="700" height="11" fill="#e15759"/><text x="834" y="2027" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<line x1="20" x2="880" y1="2034" y2="2034" stroke="#eee"/>
+<text x="28" y="2066" font-family="sans-serif" font-size="12" fill="#222" >translation</text>
+<rect x="130" y="2038" width="700" height="11" fill="#4e79a7"/><text x="834" y="2047" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="2050" width="700" height="11" fill="#f28e2b"/><text x="834" y="2059" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="2062" width="700" height="11" fill="#59a14f"/><text x="834" y="2071" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="2074" width="700" height="11" fill="#e15759"/><text x="834" y="2083" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<line x1="20" x2="880" y1="2090" y2="2090" stroke="#eee"/>
+<text x="28" y="2122" font-family="sans-serif" font-size="12" fill="#222" >summarisation</text>
+<rect x="130" y="2094" width="700" height="11" fill="#4e79a7"/><text x="834" y="2103" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="2106" width="700" height="11" fill="#f28e2b"/><text x="834" y="2115" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="2118" width="700" height="11" fill="#59a14f"/><text x="834" y="2127" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="2130" width="700" height="11" fill="#e15759"/><text x="834" y="2139" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<line x1="20" x2="880" y1="2146" y2="2146" stroke="#eee"/>
+<text x="28" y="2178" font-family="sans-serif" font-size="12" fill="#222" >extraction</text>
+<rect x="130" y="2150" width="700" height="11" fill="#4e79a7"/><text x="834" y="2159" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="2162" width="700" height="11" fill="#f28e2b"/><text x="834" y="2171" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="2174" width="469" height="11" fill="#59a14f"/><text x="603" y="2183" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="2186" width="469" height="11" fill="#e15759"/><text x="603" y="2195" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<line x1="20" x2="880" y1="2202" y2="2202" stroke="#eee"/>
+<text x="28" y="2234" font-family="sans-serif" font-size="12" fill="#222" >code</text>
+<rect x="130" y="2206" width="700" height="11" fill="#4e79a7"/><text x="834" y="2215" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="2218" width="700" height="11" fill="#f28e2b"/><text x="834" y="2227" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="2230" width="700" height="11" fill="#59a14f"/><text x="834" y="2239" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="2242" width="700" height="11" fill="#e15759"/><text x="834" y="2251" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<line x1="20" x2="880" y1="2258" y2="2258" stroke="#eee"/>
+<text x="28" y="2290" font-family="sans-serif" font-size="12" fill="#222" >reasoning</text>
+<rect x="130" y="2262" width="700" height="11" fill="#4e79a7"/><text x="834" y="2271" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="2274" width="700" height="11" fill="#f28e2b"/><text x="834" y="2283" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="2286" width="700" height="11" fill="#59a14f"/><text x="834" y="2295" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="2298" width="700" height="11" fill="#e15759"/><text x="834" y="2307" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<line x1="20" x2="880" y1="2314" y2="2314" stroke="#eee"/>
+<line x1="130" x2="130" y1="1982" y2="2318" stroke="#e5e5e5"/>
+<line x1="305" x2="305" y1="1982" y2="2318" stroke="#e5e5e5"/>
+<line x1="480" x2="480" y1="1982" y2="2318" stroke="#e5e5e5"/>
+<line x1="655" x2="655" y1="1982" y2="2318" stroke="#e5e5e5"/>
+<line x1="830" x2="830" y1="1982" y2="2318" stroke="#e5e5e5"/>
+<rect x="20" y="2328" width="860" height="18" fill="#dfe6ee"/><text x="28" y="2341" font-family="sans-serif" font-size="12" fill="#222" font-weight="bold">granite3.3:2b</text>
+<text x="130" y="2341" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">0</text>
+<text x="305" y="2341" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">25</text>
+<text x="480" y="2341" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">50</text>
+<text x="655" y="2341" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">75</text>
+<text x="830" y="2341" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">100</text>
+<text x="28" y="2378" font-family="sans-serif" font-size="12" fill="#222" >chat</text>
+<rect x="130" y="2350" width="350" height="11" fill="#4e79a7"/><text x="484" y="2359" font-family="sans-serif" fill="#222" font-size="9">50%</text>
+<rect x="130" y="2362" width="350" height="11" fill="#f28e2b"/><text x="484" y="2371" font-family="sans-serif" fill="#222" font-size="9">50%</text>
+<rect x="130" y="2374" width="350" height="11" fill="#59a14f"/><text x="484" y="2383" font-family="sans-serif" fill="#222" font-size="9">50%</text>
+<rect x="130" y="2386" width="350" height="11" fill="#e15759"/><text x="484" y="2395" font-family="sans-serif" fill="#222" font-size="9">50%</text>
+<line x1="20" x2="880" y1="2402" y2="2402" stroke="#eee"/>
+<text x="28" y="2434" font-family="sans-serif" font-size="12" fill="#222" >translation</text>
+<rect x="130" y="2406" width="700" height="11" fill="#4e79a7"/><text x="834" y="2415" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="2418" width="700" height="11" fill="#f28e2b"/><text x="834" y="2427" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="2430" width="700" height="11" fill="#59a14f"/><text x="834" y="2439" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="2442" width="700" height="11" fill="#e15759"/><text x="834" y="2451" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<line x1="20" x2="880" y1="2458" y2="2458" stroke="#eee"/>
+<text x="28" y="2490" font-family="sans-serif" font-size="12" fill="#222" >summarisation</text>
+<rect x="130" y="2462" width="469" height="11" fill="#4e79a7"/><text x="603" y="2471" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="2474" width="469" height="11" fill="#f28e2b"/><text x="603" y="2483" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="2486" width="469" height="11" fill="#59a14f"/><text x="603" y="2495" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="2498" width="469" height="11" fill="#e15759"/><text x="603" y="2507" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<line x1="20" x2="880" y1="2514" y2="2514" stroke="#eee"/>
+<text x="28" y="2546" font-family="sans-serif" font-size="12" fill="#222" >extraction</text>
+<rect x="130" y="2518" width="231" height="11" fill="#4e79a7"/><text x="365" y="2527" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<rect x="130" y="2530" width="231" height="11" fill="#f28e2b"/><text x="365" y="2539" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<rect x="130" y="2542" width="231" height="11" fill="#59a14f"/><text x="365" y="2551" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<rect x="130" y="2554" width="231" height="11" fill="#e15759"/><text x="365" y="2563" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<line x1="20" x2="880" y1="2570" y2="2570" stroke="#eee"/>
+<text x="28" y="2602" font-family="sans-serif" font-size="12" fill="#222" >code</text>
+<rect x="130" y="2574" width="469" height="11" fill="#4e79a7"/><text x="603" y="2583" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="2586" width="469" height="11" fill="#f28e2b"/><text x="603" y="2595" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="2598" width="469" height="11" fill="#59a14f"/><text x="603" y="2607" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="2610" width="469" height="11" fill="#e15759"/><text x="603" y="2619" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<line x1="20" x2="880" y1="2626" y2="2626" stroke="#eee"/>
+<text x="28" y="2658" font-family="sans-serif" font-size="12" fill="#222" >reasoning</text>
+<rect x="130" y="2630" width="560" height="11" fill="#4e79a7"/><text x="694" y="2639" font-family="sans-serif" fill="#222" font-size="9">80%</text>
+<rect x="130" y="2642" width="560" height="11" fill="#f28e2b"/><text x="694" y="2651" font-family="sans-serif" fill="#222" font-size="9">80%</text>
+<rect x="130" y="2654" width="560" height="11" fill="#59a14f"/><text x="694" y="2663" font-family="sans-serif" fill="#222" font-size="9">80%</text>
+<rect x="130" y="2666" width="560" height="11" fill="#e15759"/><text x="694" y="2675" font-family="sans-serif" fill="#222" font-size="9">80%</text>
+<line x1="20" x2="880" y1="2682" y2="2682" stroke="#eee"/>
+<line x1="130" x2="130" y1="2350" y2="2686" stroke="#e5e5e5"/>
+<line x1="305" x2="305" y1="2350" y2="2686" stroke="#e5e5e5"/>
+<line x1="480" x2="480" y1="2350" y2="2686" stroke="#e5e5e5"/>
+<line x1="655" x2="655" y1="2350" y2="2686" stroke="#e5e5e5"/>
+<line x1="830" x2="830" y1="2350" y2="2686" stroke="#e5e5e5"/>
+<rect x="20" y="2696" width="860" height="18" fill="#dfe6ee"/><text x="28" y="2709" font-family="sans-serif" font-size="12" fill="#222" font-weight="bold">qwen3:4b</text>
+<text x="130" y="2709" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">0</text>
+<text x="305" y="2709" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">25</text>
+<text x="480" y="2709" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">50</text>
+<text x="655" y="2709" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">75</text>
+<text x="830" y="2709" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">100</text>
+<text x="28" y="2746" font-family="sans-serif" font-size="12" fill="#222" >chat</text>
+<rect x="130" y="2718" width="700" height="11" fill="#4e79a7"/><text x="834" y="2727" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="2730" width="700" height="11" fill="#f28e2b"/><text x="834" y="2739" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="2742" width="700" height="11" fill="#59a14f"/><text x="834" y="2751" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="2754" width="700" height="11" fill="#e15759"/><text x="834" y="2763" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<line x1="20" x2="880" y1="2770" y2="2770" stroke="#eee"/>
+<text x="28" y="2802" font-family="sans-serif" font-size="12" fill="#222" >translation</text>
+<rect x="130" y="2774" width="546" height="11" fill="#4e79a7"/><text x="680" y="2783" font-family="sans-serif" fill="#222" font-size="9">78%</text>
+<rect x="130" y="2786" width="700" height="11" fill="#f28e2b"/><text x="834" y="2795" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="2798" width="700" height="11" fill="#59a14f"/><text x="834" y="2807" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="2810" width="700" height="11" fill="#e15759"/><text x="834" y="2819" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<line x1="20" x2="880" y1="2826" y2="2826" stroke="#eee"/>
+<text x="28" y="2858" font-family="sans-serif" font-size="12" fill="#222" >summarisation</text>
+<rect x="130" y="2830" width="700" height="11" fill="#4e79a7"/><text x="834" y="2839" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="2842" width="700" height="11" fill="#f28e2b"/><text x="834" y="2851" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="2854" width="700" height="11" fill="#59a14f"/><text x="834" y="2863" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="2866" width="700" height="11" fill="#e15759"/><text x="834" y="2875" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<line x1="20" x2="880" y1="2882" y2="2882" stroke="#eee"/>
+<text x="28" y="2914" font-family="sans-serif" font-size="12" fill="#222" >extraction</text>
+<rect x="130" y="2886" width="231" height="11" fill="#4e79a7"/><text x="365" y="2895" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<rect x="130" y="2898" width="392.00000000000006" height="11" fill="#f28e2b"/><text x="526" y="2907" font-family="sans-serif" fill="#222" font-size="9">56%</text>
+<rect x="130" y="2910" width="308" height="11" fill="#59a14f"/><text x="442" y="2919" font-family="sans-serif" fill="#222" font-size="9">44%</text>
+<rect x="130" y="2922" width="469" height="11" fill="#e15759"/><text x="603" y="2931" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<line x1="20" x2="880" y1="2938" y2="2938" stroke="#eee"/>
+<text x="28" y="2970" font-family="sans-serif" font-size="12" fill="#222" >code</text>
+<rect x="130" y="2942" width="623" height="11" fill="#4e79a7"/><text x="757" y="2951" font-family="sans-serif" fill="#222" font-size="9">89%</text>
+<rect x="130" y="2954" width="581" height="11" fill="#f28e2b"/><text x="715" y="2963" font-family="sans-serif" fill="#222" font-size="9">83%</text>
+<rect x="130" y="2966" width="700" height="11" fill="#59a14f"/><text x="834" y="2975" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="2978" width="700" height="11" fill="#e15759"/><text x="834" y="2987" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<line x1="20" x2="880" y1="2994" y2="2994" stroke="#eee"/>
+<text x="28" y="3026" font-family="sans-serif" font-size="12" fill="#222" >reasoning</text>
+<rect x="130" y="2998" width="560" height="11" fill="#4e79a7"/><text x="694" y="3007" font-family="sans-serif" fill="#222" font-size="9">80%</text>
+<rect x="130" y="3010" width="469" height="11" fill="#f28e2b"/><text x="603" y="3019" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="3022" width="560" height="11" fill="#59a14f"/><text x="694" y="3031" font-family="sans-serif" fill="#222" font-size="9">80%</text>
+<rect x="130" y="3034" width="609" height="11" fill="#e15759"/><text x="743" y="3043" font-family="sans-serif" fill="#222" font-size="9">87%</text>
+<line x1="20" x2="880" y1="3050" y2="3050" stroke="#eee"/>
+<line x1="130" x2="130" y1="2718" y2="3054" stroke="#e5e5e5"/>
+<line x1="305" x2="305" y1="2718" y2="3054" stroke="#e5e5e5"/>
+<line x1="480" x2="480" y1="2718" y2="3054" stroke="#e5e5e5"/>
+<line x1="655" x2="655" y1="2718" y2="3054" stroke="#e5e5e5"/>
+<line x1="830" x2="830" y1="2718" y2="3054" stroke="#e5e5e5"/>
+<rect x="20" y="3064" width="860" height="18" fill="#dfe6ee"/><text x="28" y="3077" font-family="sans-serif" font-size="12" fill="#222" font-weight="bold">mistral:7b</text>
+<text x="130" y="3077" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">0</text>
+<text x="305" y="3077" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">25</text>
+<text x="480" y="3077" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">50</text>
+<text x="655" y="3077" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">75</text>
+<text x="830" y="3077" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">100</text>
+<text x="28" y="3114" font-family="sans-serif" font-size="12" fill="#222" >chat</text>
+<rect x="130" y="3086" width="700" height="11" fill="#4e79a7"/><text x="834" y="3095" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="3098" width="700" height="11" fill="#f28e2b"/><text x="834" y="3107" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="3110" width="700" height="11" fill="#59a14f"/><text x="834" y="3119" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="3122" width="700" height="11" fill="#e15759"/><text x="834" y="3131" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<line x1="20" x2="880" y1="3138" y2="3138" stroke="#eee"/>
+<text x="28" y="3170" font-family="sans-serif" font-size="12" fill="#222" >translation</text>
+<rect x="130" y="3142" width="231" height="11" fill="#4e79a7"/><text x="365" y="3151" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<rect x="130" y="3154" width="231" height="11" fill="#f28e2b"/><text x="365" y="3163" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<rect x="130" y="3166" width="231" height="11" fill="#59a14f"/><text x="365" y="3175" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<rect x="130" y="3178" width="231" height="11" fill="#e15759"/><text x="365" y="3187" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<line x1="20" x2="880" y1="3194" y2="3194" stroke="#eee"/>
+<text x="28" y="3226" font-family="sans-serif" font-size="12" fill="#222" >summarisation</text>
+<rect x="130" y="3198" width="469" height="11" fill="#4e79a7"/><text x="603" y="3207" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="3210" width="469" height="11" fill="#f28e2b"/><text x="603" y="3219" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="3222" width="469" height="11" fill="#59a14f"/><text x="603" y="3231" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="3234" width="469" height="11" fill="#e15759"/><text x="603" y="3243" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<line x1="20" x2="880" y1="3250" y2="3250" stroke="#eee"/>
+<text x="28" y="3282" font-family="sans-serif" font-size="12" fill="#222" >extraction</text>
+<rect x="130" y="3254" width="469" height="11" fill="#4e79a7"/><text x="603" y="3263" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="3266" width="469" height="11" fill="#f28e2b"/><text x="603" y="3275" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="3278" width="469" height="11" fill="#59a14f"/><text x="603" y="3287" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="3290" width="469" height="11" fill="#e15759"/><text x="603" y="3299" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<line x1="20" x2="880" y1="3306" y2="3306" stroke="#eee"/>
+<text x="28" y="3338" font-family="sans-serif" font-size="12" fill="#222" >code</text>
+<rect x="130" y="3310" width="350" height="11" fill="#4e79a7"/><text x="484" y="3319" font-family="sans-serif" fill="#222" font-size="9">50%</text>
+<rect x="130" y="3322" width="350" height="11" fill="#f28e2b"/><text x="484" y="3331" font-family="sans-serif" fill="#222" font-size="9">50%</text>
+<rect x="130" y="3334" width="350" height="11" fill="#59a14f"/><text x="484" y="3343" font-family="sans-serif" fill="#222" font-size="9">50%</text>
+<rect x="130" y="3346" width="350" height="11" fill="#e15759"/><text x="484" y="3355" font-family="sans-serif" fill="#222" font-size="9">50%</text>
+<line x1="20" x2="880" y1="3362" y2="3362" stroke="#eee"/>
+<text x="28" y="3394" font-family="sans-serif" font-size="12" fill="#222" >reasoning</text>
+<rect x="130" y="3366" width="560" height="11" fill="#4e79a7"/><text x="694" y="3375" font-family="sans-serif" fill="#222" font-size="9">80%</text>
+<rect x="130" y="3378" width="560" height="11" fill="#f28e2b"/><text x="694" y="3387" font-family="sans-serif" fill="#222" font-size="9">80%</text>
+<rect x="130" y="3390" width="560" height="11" fill="#59a14f"/><text x="694" y="3399" font-family="sans-serif" fill="#222" font-size="9">80%</text>
+<rect x="130" y="3402" width="560" height="11" fill="#e15759"/><text x="694" y="3411" font-family="sans-serif" fill="#222" font-size="9">80%</text>
+<line x1="20" x2="880" y1="3418" y2="3418" stroke="#eee"/>
+<line x1="130" x2="130" y1="3086" y2="3422" stroke="#e5e5e5"/>
+<line x1="305" x2="305" y1="3086" y2="3422" stroke="#e5e5e5"/>
+<line x1="480" x2="480" y1="3086" y2="3422" stroke="#e5e5e5"/>
+<line x1="655" x2="655" y1="3086" y2="3422" stroke="#e5e5e5"/>
+<line x1="830" x2="830" y1="3086" y2="3422" stroke="#e5e5e5"/>
+<rect x="20" y="3432" width="860" height="24" fill="#2f3b4c"/><text x="28" y="3448" font-family="sans-serif" font-weight="bold" fill="#fff" font-size="13">KIND ACCURACY</text>
+<rect x="20" y="3462" width="860" height="18" fill="#dfe6ee"/><text x="28" y="3475" font-family="sans-serif" font-size="12" fill="#222" font-weight="bold">qwen3.5:2b</text>
+<text x="130" y="3475" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">0</text>
+<text x="305" y="3475" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">25</text>
+<text x="480" y="3475" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">50</text>
+<text x="655" y="3475" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">75</text>
+<text x="830" y="3475" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">100</text>
+<text x="28" y="3512" font-family="sans-serif" font-size="12" fill="#222" >chat</text>
+<rect x="130" y="3484" width="350" height="11" fill="#4e79a7"/><text x="484" y="3493" font-family="sans-serif" fill="#222" font-size="9">50%</text>
+<rect x="130" y="3496" width="350" height="11" fill="#f28e2b"/><text x="484" y="3505" font-family="sans-serif" fill="#222" font-size="9">50%</text>
+<rect x="130" y="3508" width="350" height="11" fill="#59a14f"/><text x="484" y="3517" font-family="sans-serif" fill="#222" font-size="9">50%</text>
+<rect x="130" y="3520" width="350" height="11" fill="#e15759"/><text x="484" y="3529" font-family="sans-serif" fill="#222" font-size="9">50%</text>
+<line x1="20" x2="880" y1="3536" y2="3536" stroke="#eee"/>
+<text x="28" y="3568" font-family="sans-serif" font-size="12" fill="#222" >translation</text>
+<rect x="130" y="3540" width="231" height="11" fill="#4e79a7"/><text x="365" y="3549" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<rect x="130" y="3552" width="231" height="11" fill="#f28e2b"/><text x="365" y="3561" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<rect x="130" y="3564" width="231" height="11" fill="#59a14f"/><text x="365" y="3573" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<rect x="130" y="3576" width="231" height="11" fill="#e15759"/><text x="365" y="3585" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<line x1="20" x2="880" y1="3592" y2="3592" stroke="#eee"/>
+<text x="28" y="3624" font-family="sans-serif" font-size="12" fill="#222" >summarisation</text>
+<rect x="130" y="3596" width="0" height="11" fill="#4e79a7"/><text x="134" y="3605" font-family="sans-serif" fill="#222" font-size="9">0%</text>
+<rect x="130" y="3608" width="0" height="11" fill="#f28e2b"/><text x="134" y="3617" font-family="sans-serif" fill="#222" font-size="9">0%</text>
+<rect x="130" y="3620" width="0" height="11" fill="#59a14f"/><text x="134" y="3629" font-family="sans-serif" fill="#222" font-size="9">0%</text>
+<rect x="130" y="3632" width="0" height="11" fill="#e15759"/><text x="134" y="3641" font-family="sans-serif" fill="#222" font-size="9">0%</text>
+<line x1="20" x2="880" y1="3648" y2="3648" stroke="#eee"/>
+<text x="28" y="3680" font-family="sans-serif" font-size="12" fill="#222" >extraction</text>
+<rect x="130" y="3652" width="0" height="11" fill="#4e79a7"/><text x="134" y="3661" font-family="sans-serif" fill="#222" font-size="9">0%</text>
+<rect x="130" y="3664" width="0" height="11" fill="#f28e2b"/><text x="134" y="3673" font-family="sans-serif" fill="#222" font-size="9">0%</text>
+<rect x="130" y="3676" width="0" height="11" fill="#59a14f"/><text x="134" y="3685" font-family="sans-serif" fill="#222" font-size="9">0%</text>
+<rect x="130" y="3688" width="0" height="11" fill="#e15759"/><text x="134" y="3697" font-family="sans-serif" fill="#222" font-size="9">0%</text>
+<line x1="20" x2="880" y1="3704" y2="3704" stroke="#eee"/>
+<text x="28" y="3736" font-family="sans-serif" font-size="12" fill="#222" >code</text>
+<rect x="130" y="3708" width="119.00000000000001" height="11" fill="#4e79a7"/><text x="253" y="3717" font-family="sans-serif" fill="#222" font-size="9">17%</text>
+<rect x="130" y="3720" width="119.00000000000001" height="11" fill="#f28e2b"/><text x="253" y="3729" font-family="sans-serif" fill="#222" font-size="9">17%</text>
+<rect x="130" y="3732" width="119.00000000000001" height="11" fill="#59a14f"/><text x="253" y="3741" font-family="sans-serif" fill="#222" font-size="9">17%</text>
+<rect x="130" y="3744" width="119.00000000000001" height="11" fill="#e15759"/><text x="253" y="3753" font-family="sans-serif" fill="#222" font-size="9">17%</text>
+<line x1="20" x2="880" y1="3760" y2="3760" stroke="#eee"/>
+<text x="28" y="3792" font-family="sans-serif" font-size="12" fill="#222" >reasoning</text>
+<rect x="130" y="3764" width="140" height="11" fill="#4e79a7"/><text x="274" y="3773" font-family="sans-serif" fill="#222" font-size="9">20%</text>
+<rect x="130" y="3776" width="140" height="11" fill="#f28e2b"/><text x="274" y="3785" font-family="sans-serif" fill="#222" font-size="9">20%</text>
+<rect x="130" y="3788" width="140" height="11" fill="#59a14f"/><text x="274" y="3797" font-family="sans-serif" fill="#222" font-size="9">20%</text>
+<rect x="130" y="3800" width="140" height="11" fill="#e15759"/><text x="274" y="3809" font-family="sans-serif" fill="#222" font-size="9">20%</text>
+<line x1="20" x2="880" y1="3816" y2="3816" stroke="#eee"/>
+<line x1="130" x2="130" y1="3484" y2="3820" stroke="#e5e5e5"/>
+<line x1="305" x2="305" y1="3484" y2="3820" stroke="#e5e5e5"/>
+<line x1="480" x2="480" y1="3484" y2="3820" stroke="#e5e5e5"/>
+<line x1="655" x2="655" y1="3484" y2="3820" stroke="#e5e5e5"/>
+<line x1="830" x2="830" y1="3484" y2="3820" stroke="#e5e5e5"/>
+<rect x="20" y="3830" width="860" height="18" fill="#dfe6ee"/><text x="28" y="3843" font-family="sans-serif" font-size="12" fill="#222" font-weight="bold">qwen3.5:4b</text>
+<text x="130" y="3843" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">0</text>
+<text x="305" y="3843" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">25</text>
+<text x="480" y="3843" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">50</text>
+<text x="655" y="3843" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">75</text>
+<text x="830" y="3843" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">100</text>
+<text x="28" y="3880" font-family="sans-serif" font-size="12" fill="#222" >chat</text>
+<rect x="130" y="3852" width="700" height="11" fill="#4e79a7"/><text x="834" y="3861" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="3864" width="700" height="11" fill="#f28e2b"/><text x="834" y="3873" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="3876" width="700" height="11" fill="#59a14f"/><text x="834" y="3885" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="3888" width="700" height="11" fill="#e15759"/><text x="834" y="3897" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<line x1="20" x2="880" y1="3904" y2="3904" stroke="#eee"/>
+<text x="28" y="3936" font-family="sans-serif" font-size="12" fill="#222" >translation</text>
+<rect x="130" y="3908" width="700" height="11" fill="#4e79a7"/><text x="834" y="3917" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="3920" width="700" height="11" fill="#f28e2b"/><text x="834" y="3929" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="3932" width="700" height="11" fill="#59a14f"/><text x="834" y="3941" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="3944" width="700" height="11" fill="#e15759"/><text x="834" y="3953" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<line x1="20" x2="880" y1="3960" y2="3960" stroke="#eee"/>
+<text x="28" y="3992" font-family="sans-serif" font-size="12" fill="#222" >summarisation</text>
+<rect x="130" y="3964" width="469" height="11" fill="#4e79a7"/><text x="603" y="3973" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="3976" width="469" height="11" fill="#f28e2b"/><text x="603" y="3985" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="3988" width="469" height="11" fill="#59a14f"/><text x="603" y="3997" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="4000" width="469" height="11" fill="#e15759"/><text x="603" y="4009" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<line x1="20" x2="880" y1="4016" y2="4016" stroke="#eee"/>
+<text x="28" y="4048" font-family="sans-serif" font-size="12" fill="#222" >extraction</text>
+<rect x="130" y="4020" width="700" height="11" fill="#4e79a7"/><text x="834" y="4029" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="4032" width="700" height="11" fill="#f28e2b"/><text x="834" y="4041" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="4044" width="700" height="11" fill="#59a14f"/><text x="834" y="4053" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="4056" width="700" height="11" fill="#e15759"/><text x="834" y="4065" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<line x1="20" x2="880" y1="4072" y2="4072" stroke="#eee"/>
+<text x="28" y="4104" font-family="sans-serif" font-size="12" fill="#222" >code</text>
+<rect x="130" y="4076" width="469" height="11" fill="#4e79a7"/><text x="603" y="4085" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="4088" width="469" height="11" fill="#f28e2b"/><text x="603" y="4097" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="4100" width="469" height="11" fill="#59a14f"/><text x="603" y="4109" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="4112" width="469" height="11" fill="#e15759"/><text x="603" y="4121" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<line x1="20" x2="880" y1="4128" y2="4128" stroke="#eee"/>
+<text x="28" y="4160" font-family="sans-serif" font-size="12" fill="#222" >reasoning</text>
+<rect x="130" y="4132" width="700" height="11" fill="#4e79a7"/><text x="834" y="4141" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="4144" width="700" height="11" fill="#f28e2b"/><text x="834" y="4153" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="4156" width="700" height="11" fill="#59a14f"/><text x="834" y="4165" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="4168" width="700" height="11" fill="#e15759"/><text x="834" y="4177" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<line x1="20" x2="880" y1="4184" y2="4184" stroke="#eee"/>
+<line x1="130" x2="130" y1="3852" y2="4188" stroke="#e5e5e5"/>
+<line x1="305" x2="305" y1="3852" y2="4188" stroke="#e5e5e5"/>
+<line x1="480" x2="480" y1="3852" y2="4188" stroke="#e5e5e5"/>
+<line x1="655" x2="655" y1="3852" y2="4188" stroke="#e5e5e5"/>
+<line x1="830" x2="830" y1="3852" y2="4188" stroke="#e5e5e5"/>
+<rect x="20" y="4198" width="860" height="18" fill="#dfe6ee"/><text x="28" y="4211" font-family="sans-serif" font-size="12" fill="#222" font-weight="bold">qwen2.5-coder:3b</text>
+<text x="130" y="4211" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">0</text>
+<text x="305" y="4211" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">25</text>
+<text x="480" y="4211" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">50</text>
+<text x="655" y="4211" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">75</text>
+<text x="830" y="4211" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">100</text>
+<text x="28" y="4248" font-family="sans-serif" font-size="12" fill="#222" >chat</text>
+<rect x="130" y="4220" width="525" height="11" fill="#4e79a7"/><text x="659" y="4229" font-family="sans-serif" fill="#222" font-size="9">75%</text>
+<rect x="130" y="4232" width="525" height="11" fill="#f28e2b"/><text x="659" y="4241" font-family="sans-serif" fill="#222" font-size="9">75%</text>
+<rect x="130" y="4244" width="525" height="11" fill="#59a14f"/><text x="659" y="4253" font-family="sans-serif" fill="#222" font-size="9">75%</text>
+<rect x="130" y="4256" width="525" height="11" fill="#e15759"/><text x="659" y="4265" font-family="sans-serif" fill="#222" font-size="9">75%</text>
+<line x1="20" x2="880" y1="4272" y2="4272" stroke="#eee"/>
+<text x="28" y="4304" font-family="sans-serif" font-size="12" fill="#222" >translation</text>
+<rect x="130" y="4276" width="469" height="11" fill="#4e79a7"/><text x="603" y="4285" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="4288" width="469" height="11" fill="#f28e2b"/><text x="603" y="4297" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="4300" width="469" height="11" fill="#59a14f"/><text x="603" y="4309" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="4312" width="469" height="11" fill="#e15759"/><text x="603" y="4321" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<line x1="20" x2="880" y1="4328" y2="4328" stroke="#eee"/>
+<text x="28" y="4360" font-family="sans-serif" font-size="12" fill="#222" >summarisation</text>
+<rect x="130" y="4332" width="0" height="11" fill="#4e79a7"/><text x="134" y="4341" font-family="sans-serif" fill="#222" font-size="9">0%</text>
+<rect x="130" y="4344" width="0" height="11" fill="#f28e2b"/><text x="134" y="4353" font-family="sans-serif" fill="#222" font-size="9">0%</text>
+<rect x="130" y="4356" width="0" height="11" fill="#59a14f"/><text x="134" y="4365" font-family="sans-serif" fill="#222" font-size="9">0%</text>
+<rect x="130" y="4368" width="0" height="11" fill="#e15759"/><text x="134" y="4377" font-family="sans-serif" fill="#222" font-size="9">0%</text>
+<line x1="20" x2="880" y1="4384" y2="4384" stroke="#eee"/>
+<text x="28" y="4416" font-family="sans-serif" font-size="12" fill="#222" >extraction</text>
+<rect x="130" y="4388" width="469" height="11" fill="#4e79a7"/><text x="603" y="4397" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="4400" width="469" height="11" fill="#f28e2b"/><text x="603" y="4409" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="4412" width="469" height="11" fill="#59a14f"/><text x="603" y="4421" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="4424" width="469" height="11" fill="#e15759"/><text x="603" y="4433" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<line x1="20" x2="880" y1="4440" y2="4440" stroke="#eee"/>
+<text x="28" y="4472" font-family="sans-serif" font-size="12" fill="#222" >code</text>
+<rect x="130" y="4444" width="469" height="11" fill="#4e79a7"/><text x="603" y="4453" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="4456" width="469" height="11" fill="#f28e2b"/><text x="603" y="4465" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="4468" width="469" height="11" fill="#59a14f"/><text x="603" y="4477" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="4480" width="469" height="11" fill="#e15759"/><text x="603" y="4489" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<line x1="20" x2="880" y1="4496" y2="4496" stroke="#eee"/>
+<text x="28" y="4528" font-family="sans-serif" font-size="12" fill="#222" >reasoning</text>
+<rect x="130" y="4500" width="700" height="11" fill="#4e79a7"/><text x="834" y="4509" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="4512" width="700" height="11" fill="#f28e2b"/><text x="834" y="4521" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="4524" width="700" height="11" fill="#59a14f"/><text x="834" y="4533" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="4536" width="700" height="11" fill="#e15759"/><text x="834" y="4545" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<line x1="20" x2="880" y1="4552" y2="4552" stroke="#eee"/>
+<line x1="130" x2="130" y1="4220" y2="4556" stroke="#e5e5e5"/>
+<line x1="305" x2="305" y1="4220" y2="4556" stroke="#e5e5e5"/>
+<line x1="480" x2="480" y1="4220" y2="4556" stroke="#e5e5e5"/>
+<line x1="655" x2="655" y1="4220" y2="4556" stroke="#e5e5e5"/>
+<line x1="830" x2="830" y1="4220" y2="4556" stroke="#e5e5e5"/>
+<rect x="20" y="4566" width="860" height="18" fill="#dfe6ee"/><text x="28" y="4579" font-family="sans-serif" font-size="12" fill="#222" font-weight="bold">llama3.2:3b</text>
+<text x="130" y="4579" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">0</text>
+<text x="305" y="4579" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">25</text>
+<text x="480" y="4579" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">50</text>
+<text x="655" y="4579" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">75</text>
+<text x="830" y="4579" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">100</text>
+<text x="28" y="4616" font-family="sans-serif" font-size="12" fill="#222" >chat</text>
+<rect x="130" y="4588" width="525" height="11" fill="#4e79a7"/><text x="659" y="4597" font-family="sans-serif" fill="#222" font-size="9">75%</text>
+<rect x="130" y="4600" width="525" height="11" fill="#f28e2b"/><text x="659" y="4609" font-family="sans-serif" fill="#222" font-size="9">75%</text>
+<rect x="130" y="4612" width="525" height="11" fill="#59a14f"/><text x="659" y="4621" font-family="sans-serif" fill="#222" font-size="9">75%</text>
+<rect x="130" y="4624" width="525" height="11" fill="#e15759"/><text x="659" y="4633" font-family="sans-serif" fill="#222" font-size="9">75%</text>
+<line x1="20" x2="880" y1="4640" y2="4640" stroke="#eee"/>
+<text x="28" y="4672" font-family="sans-serif" font-size="12" fill="#222" >translation</text>
+<rect x="130" y="4644" width="469" height="11" fill="#4e79a7"/><text x="603" y="4653" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="4656" width="469" height="11" fill="#f28e2b"/><text x="603" y="4665" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="4668" width="469" height="11" fill="#59a14f"/><text x="603" y="4677" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="4680" width="469" height="11" fill="#e15759"/><text x="603" y="4689" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<line x1="20" x2="880" y1="4696" y2="4696" stroke="#eee"/>
+<text x="28" y="4728" font-family="sans-serif" font-size="12" fill="#222" >summarisation</text>
+<rect x="130" y="4700" width="700" height="11" fill="#4e79a7"/><text x="834" y="4709" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="4712" width="700" height="11" fill="#f28e2b"/><text x="834" y="4721" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="4724" width="700" height="11" fill="#59a14f"/><text x="834" y="4733" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="4736" width="700" height="11" fill="#e15759"/><text x="834" y="4745" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<line x1="20" x2="880" y1="4752" y2="4752" stroke="#eee"/>
+<text x="28" y="4784" font-family="sans-serif" font-size="12" fill="#222" >extraction</text>
+<rect x="130" y="4756" width="231" height="11" fill="#4e79a7"/><text x="365" y="4765" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<rect x="130" y="4768" width="231" height="11" fill="#f28e2b"/><text x="365" y="4777" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<rect x="130" y="4780" width="231" height="11" fill="#59a14f"/><text x="365" y="4789" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<rect x="130" y="4792" width="231" height="11" fill="#e15759"/><text x="365" y="4801" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<line x1="20" x2="880" y1="4808" y2="4808" stroke="#eee"/>
+<text x="28" y="4840" font-family="sans-serif" font-size="12" fill="#222" >code</text>
+<rect x="130" y="4812" width="427" height="11" fill="#4e79a7"/><text x="561" y="4821" font-family="sans-serif" fill="#222" font-size="9">61%</text>
+<rect x="130" y="4824" width="427" height="11" fill="#f28e2b"/><text x="561" y="4833" font-family="sans-serif" fill="#222" font-size="9">61%</text>
+<rect x="130" y="4836" width="427" height="11" fill="#59a14f"/><text x="561" y="4845" font-family="sans-serif" fill="#222" font-size="9">61%</text>
+<rect x="130" y="4848" width="427" height="11" fill="#e15759"/><text x="561" y="4857" font-family="sans-serif" fill="#222" font-size="9">61%</text>
+<line x1="20" x2="880" y1="4864" y2="4864" stroke="#eee"/>
+<text x="28" y="4896" font-family="sans-serif" font-size="12" fill="#222" >reasoning</text>
+<rect x="130" y="4868" width="420" height="11" fill="#4e79a7"/><text x="554" y="4877" font-family="sans-serif" fill="#222" font-size="9">60%</text>
+<rect x="130" y="4880" width="420" height="11" fill="#f28e2b"/><text x="554" y="4889" font-family="sans-serif" fill="#222" font-size="9">60%</text>
+<rect x="130" y="4892" width="420" height="11" fill="#59a14f"/><text x="554" y="4901" font-family="sans-serif" fill="#222" font-size="9">60%</text>
+<rect x="130" y="4904" width="420" height="11" fill="#e15759"/><text x="554" y="4913" font-family="sans-serif" fill="#222" font-size="9">60%</text>
+<line x1="20" x2="880" y1="4920" y2="4920" stroke="#eee"/>
+<line x1="130" x2="130" y1="4588" y2="4924" stroke="#e5e5e5"/>
+<line x1="305" x2="305" y1="4588" y2="4924" stroke="#e5e5e5"/>
+<line x1="480" x2="480" y1="4588" y2="4924" stroke="#e5e5e5"/>
+<line x1="655" x2="655" y1="4588" y2="4924" stroke="#e5e5e5"/>
+<line x1="830" x2="830" y1="4588" y2="4924" stroke="#e5e5e5"/>
+<rect x="20" y="4934" width="860" height="18" fill="#dfe6ee"/><text x="28" y="4947" font-family="sans-serif" font-size="12" fill="#222" font-weight="bold">gemma3:4b</text>
+<text x="130" y="4947" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">0</text>
+<text x="305" y="4947" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">25</text>
+<text x="480" y="4947" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">50</text>
+<text x="655" y="4947" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">75</text>
+<text x="830" y="4947" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">100</text>
+<text x="28" y="4984" font-family="sans-serif" font-size="12" fill="#222" >chat</text>
+<rect x="130" y="4956" width="525" height="11" fill="#4e79a7"/><text x="659" y="4965" font-family="sans-serif" fill="#222" font-size="9">75%</text>
+<rect x="130" y="4968" width="525" height="11" fill="#f28e2b"/><text x="659" y="4977" font-family="sans-serif" fill="#222" font-size="9">75%</text>
+<rect x="130" y="4980" width="525" height="11" fill="#59a14f"/><text x="659" y="4989" font-family="sans-serif" fill="#222" font-size="9">75%</text>
+<rect x="130" y="4992" width="525" height="11" fill="#e15759"/><text x="659" y="5001" font-family="sans-serif" fill="#222" font-size="9">75%</text>
+<line x1="20" x2="880" y1="5008" y2="5008" stroke="#eee"/>
+<text x="28" y="5040" font-family="sans-serif" font-size="12" fill="#222" >translation</text>
+<rect x="130" y="5012" width="700" height="11" fill="#4e79a7"/><text x="834" y="5021" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="5024" width="700" height="11" fill="#f28e2b"/><text x="834" y="5033" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="5036" width="700" height="11" fill="#59a14f"/><text x="834" y="5045" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="5048" width="700" height="11" fill="#e15759"/><text x="834" y="5057" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<line x1="20" x2="880" y1="5064" y2="5064" stroke="#eee"/>
+<text x="28" y="5096" font-family="sans-serif" font-size="12" fill="#222" >summarisation</text>
+<rect x="130" y="5068" width="469" height="11" fill="#4e79a7"/><text x="603" y="5077" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="5080" width="469" height="11" fill="#f28e2b"/><text x="603" y="5089" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="5092" width="469" height="11" fill="#59a14f"/><text x="603" y="5101" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="5104" width="469" height="11" fill="#e15759"/><text x="603" y="5113" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<line x1="20" x2="880" y1="5120" y2="5120" stroke="#eee"/>
+<text x="28" y="5152" font-family="sans-serif" font-size="12" fill="#222" >extraction</text>
+<rect x="130" y="5124" width="700" height="11" fill="#4e79a7"/><text x="834" y="5133" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="5136" width="700" height="11" fill="#f28e2b"/><text x="834" y="5145" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="5148" width="700" height="11" fill="#59a14f"/><text x="834" y="5157" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="5160" width="700" height="11" fill="#e15759"/><text x="834" y="5169" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<line x1="20" x2="880" y1="5176" y2="5176" stroke="#eee"/>
+<text x="28" y="5208" font-family="sans-serif" font-size="12" fill="#222" >code</text>
+<rect x="130" y="5180" width="231" height="11" fill="#4e79a7"/><text x="365" y="5189" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<rect x="130" y="5192" width="231" height="11" fill="#f28e2b"/><text x="365" y="5201" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<rect x="130" y="5204" width="231" height="11" fill="#59a14f"/><text x="365" y="5213" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<rect x="130" y="5216" width="231" height="11" fill="#e15759"/><text x="365" y="5225" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<line x1="20" x2="880" y1="5232" y2="5232" stroke="#eee"/>
+<text x="28" y="5264" font-family="sans-serif" font-size="12" fill="#222" >reasoning</text>
+<rect x="130" y="5236" width="700" height="11" fill="#4e79a7"/><text x="834" y="5245" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="5248" width="700" height="11" fill="#f28e2b"/><text x="834" y="5257" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="5260" width="700" height="11" fill="#59a14f"/><text x="834" y="5269" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="5272" width="700" height="11" fill="#e15759"/><text x="834" y="5281" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<line x1="20" x2="880" y1="5288" y2="5288" stroke="#eee"/>
+<line x1="130" x2="130" y1="4956" y2="5292" stroke="#e5e5e5"/>
+<line x1="305" x2="305" y1="4956" y2="5292" stroke="#e5e5e5"/>
+<line x1="480" x2="480" y1="4956" y2="5292" stroke="#e5e5e5"/>
+<line x1="655" x2="655" y1="4956" y2="5292" stroke="#e5e5e5"/>
+<line x1="830" x2="830" y1="4956" y2="5292" stroke="#e5e5e5"/>
+<rect x="20" y="5302" width="860" height="18" fill="#dfe6ee"/><text x="28" y="5315" font-family="sans-serif" font-size="12" fill="#222" font-weight="bold">phi4-mini</text>
+<text x="130" y="5315" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">0</text>
+<text x="305" y="5315" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">25</text>
+<text x="480" y="5315" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">50</text>
+<text x="655" y="5315" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">75</text>
+<text x="830" y="5315" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">100</text>
+<text x="28" y="5352" font-family="sans-serif" font-size="12" fill="#222" >chat</text>
+<rect x="130" y="5324" width="175" height="11" fill="#4e79a7"/><text x="309" y="5333" font-family="sans-serif" fill="#222" font-size="9">25%</text>
+<rect x="130" y="5336" width="175" height="11" fill="#f28e2b"/><text x="309" y="5345" font-family="sans-serif" fill="#222" font-size="9">25%</text>
+<rect x="130" y="5348" width="175" height="11" fill="#59a14f"/><text x="309" y="5357" font-family="sans-serif" fill="#222" font-size="9">25%</text>
+<rect x="130" y="5360" width="175" height="11" fill="#e15759"/><text x="309" y="5369" font-family="sans-serif" fill="#222" font-size="9">25%</text>
+<line x1="20" x2="880" y1="5376" y2="5376" stroke="#eee"/>
+<text x="28" y="5408" font-family="sans-serif" font-size="12" fill="#222" >translation</text>
+<rect x="130" y="5380" width="700" height="11" fill="#4e79a7"/><text x="834" y="5389" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="5392" width="700" height="11" fill="#f28e2b"/><text x="834" y="5401" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="5404" width="700" height="11" fill="#59a14f"/><text x="834" y="5413" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="5416" width="700" height="11" fill="#e15759"/><text x="834" y="5425" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<line x1="20" x2="880" y1="5432" y2="5432" stroke="#eee"/>
+<text x="28" y="5464" font-family="sans-serif" font-size="12" fill="#222" >summarisation</text>
+<rect x="130" y="5436" width="700" height="11" fill="#4e79a7"/><text x="834" y="5445" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="5448" width="700" height="11" fill="#f28e2b"/><text x="834" y="5457" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="5460" width="700" height="11" fill="#59a14f"/><text x="834" y="5469" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="5472" width="700" height="11" fill="#e15759"/><text x="834" y="5481" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<line x1="20" x2="880" y1="5488" y2="5488" stroke="#eee"/>
+<text x="28" y="5520" font-family="sans-serif" font-size="12" fill="#222" >extraction</text>
+<rect x="130" y="5492" width="700" height="11" fill="#4e79a7"/><text x="834" y="5501" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="5504" width="700" height="11" fill="#f28e2b"/><text x="834" y="5513" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="5516" width="469" height="11" fill="#59a14f"/><text x="603" y="5525" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="5528" width="469" height="11" fill="#e15759"/><text x="603" y="5537" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<line x1="20" x2="880" y1="5544" y2="5544" stroke="#eee"/>
+<text x="28" y="5576" font-family="sans-serif" font-size="12" fill="#222" >code</text>
+<rect x="130" y="5548" width="350" height="11" fill="#4e79a7"/><text x="484" y="5557" font-family="sans-serif" fill="#222" font-size="9">50%</text>
+<rect x="130" y="5560" width="350" height="11" fill="#f28e2b"/><text x="484" y="5569" font-family="sans-serif" fill="#222" font-size="9">50%</text>
+<rect x="130" y="5572" width="350" height="11" fill="#59a14f"/><text x="484" y="5581" font-family="sans-serif" fill="#222" font-size="9">50%</text>
+<rect x="130" y="5584" width="350" height="11" fill="#e15759"/><text x="484" y="5593" font-family="sans-serif" fill="#222" font-size="9">50%</text>
+<line x1="20" x2="880" y1="5600" y2="5600" stroke="#eee"/>
+<text x="28" y="5632" font-family="sans-serif" font-size="12" fill="#222" >reasoning</text>
+<rect x="130" y="5604" width="280" height="11" fill="#4e79a7"/><text x="414" y="5613" font-family="sans-serif" fill="#222" font-size="9">40%</text>
+<rect x="130" y="5616" width="280" height="11" fill="#f28e2b"/><text x="414" y="5625" font-family="sans-serif" fill="#222" font-size="9">40%</text>
+<rect x="130" y="5628" width="189" height="11" fill="#59a14f"/><text x="323" y="5637" font-family="sans-serif" fill="#222" font-size="9">27%</text>
+<rect x="130" y="5640" width="280" height="11" fill="#e15759"/><text x="414" y="5649" font-family="sans-serif" fill="#222" font-size="9">40%</text>
+<line x1="20" x2="880" y1="5656" y2="5656" stroke="#eee"/>
+<line x1="130" x2="130" y1="5324" y2="5660" stroke="#e5e5e5"/>
+<line x1="305" x2="305" y1="5324" y2="5660" stroke="#e5e5e5"/>
+<line x1="480" x2="480" y1="5324" y2="5660" stroke="#e5e5e5"/>
+<line x1="655" x2="655" y1="5324" y2="5660" stroke="#e5e5e5"/>
+<line x1="830" x2="830" y1="5324" y2="5660" stroke="#e5e5e5"/>
+<rect x="20" y="5670" width="860" height="18" fill="#dfe6ee"/><text x="28" y="5683" font-family="sans-serif" font-size="12" fill="#222" font-weight="bold">granite3.3:2b</text>
+<text x="130" y="5683" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">0</text>
+<text x="305" y="5683" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">25</text>
+<text x="480" y="5683" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">50</text>
+<text x="655" y="5683" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">75</text>
+<text x="830" y="5683" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">100</text>
+<text x="28" y="5720" font-family="sans-serif" font-size="12" fill="#222" >chat</text>
+<rect x="130" y="5692" width="350" height="11" fill="#4e79a7"/><text x="484" y="5701" font-family="sans-serif" fill="#222" font-size="9">50%</text>
+<rect x="130" y="5704" width="350" height="11" fill="#f28e2b"/><text x="484" y="5713" font-family="sans-serif" fill="#222" font-size="9">50%</text>
+<rect x="130" y="5716" width="350" height="11" fill="#59a14f"/><text x="484" y="5725" font-family="sans-serif" fill="#222" font-size="9">50%</text>
+<rect x="130" y="5728" width="350" height="11" fill="#e15759"/><text x="484" y="5737" font-family="sans-serif" fill="#222" font-size="9">50%</text>
+<line x1="20" x2="880" y1="5744" y2="5744" stroke="#eee"/>
+<text x="28" y="5776" font-family="sans-serif" font-size="12" fill="#222" >translation</text>
+<rect x="130" y="5748" width="700" height="11" fill="#4e79a7"/><text x="834" y="5757" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="5760" width="700" height="11" fill="#f28e2b"/><text x="834" y="5769" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="5772" width="700" height="11" fill="#59a14f"/><text x="834" y="5781" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="5784" width="700" height="11" fill="#e15759"/><text x="834" y="5793" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<line x1="20" x2="880" y1="5800" y2="5800" stroke="#eee"/>
+<text x="28" y="5832" font-family="sans-serif" font-size="12" fill="#222" >summarisation</text>
+<rect x="130" y="5804" width="469" height="11" fill="#4e79a7"/><text x="603" y="5813" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="5816" width="469" height="11" fill="#f28e2b"/><text x="603" y="5825" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="5828" width="469" height="11" fill="#59a14f"/><text x="603" y="5837" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="5840" width="469" height="11" fill="#e15759"/><text x="603" y="5849" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<line x1="20" x2="880" y1="5856" y2="5856" stroke="#eee"/>
+<text x="28" y="5888" font-family="sans-serif" font-size="12" fill="#222" >extraction</text>
+<rect x="130" y="5860" width="231" height="11" fill="#4e79a7"/><text x="365" y="5869" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<rect x="130" y="5872" width="231" height="11" fill="#f28e2b"/><text x="365" y="5881" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<rect x="130" y="5884" width="231" height="11" fill="#59a14f"/><text x="365" y="5893" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<rect x="130" y="5896" width="231" height="11" fill="#e15759"/><text x="365" y="5905" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<line x1="20" x2="880" y1="5912" y2="5912" stroke="#eee"/>
+<text x="28" y="5944" font-family="sans-serif" font-size="12" fill="#222" >code</text>
+<rect x="130" y="5916" width="469" height="11" fill="#4e79a7"/><text x="603" y="5925" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="5928" width="469" height="11" fill="#f28e2b"/><text x="603" y="5937" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="5940" width="469" height="11" fill="#59a14f"/><text x="603" y="5949" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="5952" width="469" height="11" fill="#e15759"/><text x="603" y="5961" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<line x1="20" x2="880" y1="5968" y2="5968" stroke="#eee"/>
+<text x="28" y="6000" font-family="sans-serif" font-size="12" fill="#222" >reasoning</text>
+<rect x="130" y="5972" width="231" height="11" fill="#4e79a7"/><text x="365" y="5981" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<rect x="130" y="5984" width="231" height="11" fill="#f28e2b"/><text x="365" y="5993" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<rect x="130" y="5996" width="231" height="11" fill="#59a14f"/><text x="365" y="6005" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<rect x="130" y="6008" width="231" height="11" fill="#e15759"/><text x="365" y="6017" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<line x1="20" x2="880" y1="6024" y2="6024" stroke="#eee"/>
+<line x1="130" x2="130" y1="5692" y2="6028" stroke="#e5e5e5"/>
+<line x1="305" x2="305" y1="5692" y2="6028" stroke="#e5e5e5"/>
+<line x1="480" x2="480" y1="5692" y2="6028" stroke="#e5e5e5"/>
+<line x1="655" x2="655" y1="5692" y2="6028" stroke="#e5e5e5"/>
+<line x1="830" x2="830" y1="5692" y2="6028" stroke="#e5e5e5"/>
+<rect x="20" y="6038" width="860" height="18" fill="#dfe6ee"/><text x="28" y="6051" font-family="sans-serif" font-size="12" fill="#222" font-weight="bold">qwen3:4b</text>
+<text x="130" y="6051" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">0</text>
+<text x="305" y="6051" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">25</text>
+<text x="480" y="6051" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">50</text>
+<text x="655" y="6051" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">75</text>
+<text x="830" y="6051" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">100</text>
+<text x="28" y="6088" font-family="sans-serif" font-size="12" fill="#222" >chat</text>
+<rect x="130" y="6060" width="525" height="11" fill="#4e79a7"/><text x="659" y="6069" font-family="sans-serif" fill="#222" font-size="9">75%</text>
+<rect x="130" y="6072" width="525" height="11" fill="#f28e2b"/><text x="659" y="6081" font-family="sans-serif" fill="#222" font-size="9">75%</text>
+<rect x="130" y="6084" width="525" height="11" fill="#59a14f"/><text x="659" y="6093" font-family="sans-serif" fill="#222" font-size="9">75%</text>
+<rect x="130" y="6096" width="525" height="11" fill="#e15759"/><text x="659" y="6105" font-family="sans-serif" fill="#222" font-size="9">75%</text>
+<line x1="20" x2="880" y1="6112" y2="6112" stroke="#eee"/>
+<text x="28" y="6144" font-family="sans-serif" font-size="12" fill="#222" >translation</text>
+<rect x="130" y="6116" width="546" height="11" fill="#4e79a7"/><text x="680" y="6125" font-family="sans-serif" fill="#222" font-size="9">78%</text>
+<rect x="130" y="6128" width="700" height="11" fill="#f28e2b"/><text x="834" y="6137" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="6140" width="700" height="11" fill="#59a14f"/><text x="834" y="6149" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="6152" width="700" height="11" fill="#e15759"/><text x="834" y="6161" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<line x1="20" x2="880" y1="6168" y2="6168" stroke="#eee"/>
+<text x="28" y="6200" font-family="sans-serif" font-size="12" fill="#222" >summarisation</text>
+<rect x="130" y="6172" width="700" height="11" fill="#4e79a7"/><text x="834" y="6181" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="6184" width="700" height="11" fill="#f28e2b"/><text x="834" y="6193" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="6196" width="700" height="11" fill="#59a14f"/><text x="834" y="6205" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="6208" width="700" height="11" fill="#e15759"/><text x="834" y="6217" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<line x1="20" x2="880" y1="6224" y2="6224" stroke="#eee"/>
+<text x="28" y="6256" font-family="sans-serif" font-size="12" fill="#222" >extraction</text>
+<rect x="130" y="6228" width="231" height="11" fill="#4e79a7"/><text x="365" y="6237" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<rect x="130" y="6240" width="392.00000000000006" height="11" fill="#f28e2b"/><text x="526" y="6249" font-family="sans-serif" fill="#222" font-size="9">56%</text>
+<rect x="130" y="6252" width="308" height="11" fill="#59a14f"/><text x="442" y="6261" font-family="sans-serif" fill="#222" font-size="9">44%</text>
+<rect x="130" y="6264" width="469" height="11" fill="#e15759"/><text x="603" y="6273" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<line x1="20" x2="880" y1="6280" y2="6280" stroke="#eee"/>
+<text x="28" y="6312" font-family="sans-serif" font-size="12" fill="#222" >code</text>
+<rect x="130" y="6284" width="350" height="11" fill="#4e79a7"/><text x="484" y="6293" font-family="sans-serif" fill="#222" font-size="9">50%</text>
+<rect x="130" y="6296" width="350" height="11" fill="#f28e2b"/><text x="484" y="6305" font-family="sans-serif" fill="#222" font-size="9">50%</text>
+<rect x="130" y="6308" width="350" height="11" fill="#59a14f"/><text x="484" y="6317" font-family="sans-serif" fill="#222" font-size="9">50%</text>
+<rect x="130" y="6320" width="350" height="11" fill="#e15759"/><text x="484" y="6329" font-family="sans-serif" fill="#222" font-size="9">50%</text>
+<line x1="20" x2="880" y1="6336" y2="6336" stroke="#eee"/>
+<text x="28" y="6368" font-family="sans-serif" font-size="12" fill="#222" >reasoning</text>
+<rect x="130" y="6340" width="560" height="11" fill="#4e79a7"/><text x="694" y="6349" font-family="sans-serif" fill="#222" font-size="9">80%</text>
+<rect x="130" y="6352" width="469" height="11" fill="#f28e2b"/><text x="603" y="6361" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="6364" width="560" height="11" fill="#59a14f"/><text x="694" y="6373" font-family="sans-serif" fill="#222" font-size="9">80%</text>
+<rect x="130" y="6376" width="609" height="11" fill="#e15759"/><text x="743" y="6385" font-family="sans-serif" fill="#222" font-size="9">87%</text>
+<line x1="20" x2="880" y1="6392" y2="6392" stroke="#eee"/>
+<line x1="130" x2="130" y1="6060" y2="6396" stroke="#e5e5e5"/>
+<line x1="305" x2="305" y1="6060" y2="6396" stroke="#e5e5e5"/>
+<line x1="480" x2="480" y1="6060" y2="6396" stroke="#e5e5e5"/>
+<line x1="655" x2="655" y1="6060" y2="6396" stroke="#e5e5e5"/>
+<line x1="830" x2="830" y1="6060" y2="6396" stroke="#e5e5e5"/>
+<rect x="20" y="6406" width="860" height="18" fill="#dfe6ee"/><text x="28" y="6419" font-family="sans-serif" font-size="12" fill="#222" font-weight="bold">mistral:7b</text>
+<text x="130" y="6419" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">0</text>
+<text x="305" y="6419" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">25</text>
+<text x="480" y="6419" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">50</text>
+<text x="655" y="6419" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">75</text>
+<text x="830" y="6419" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">100</text>
+<text x="28" y="6456" font-family="sans-serif" font-size="12" fill="#222" >chat</text>
+<rect x="130" y="6428" width="700" height="11" fill="#4e79a7"/><text x="834" y="6437" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="6440" width="700" height="11" fill="#f28e2b"/><text x="834" y="6449" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="6452" width="700" height="11" fill="#59a14f"/><text x="834" y="6461" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="6464" width="700" height="11" fill="#e15759"/><text x="834" y="6473" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<line x1="20" x2="880" y1="6480" y2="6480" stroke="#eee"/>
+<text x="28" y="6512" font-family="sans-serif" font-size="12" fill="#222" >translation</text>
+<rect x="130" y="6484" width="231" height="11" fill="#4e79a7"/><text x="365" y="6493" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<rect x="130" y="6496" width="231" height="11" fill="#f28e2b"/><text x="365" y="6505" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<rect x="130" y="6508" width="231" height="11" fill="#59a14f"/><text x="365" y="6517" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<rect x="130" y="6520" width="231" height="11" fill="#e15759"/><text x="365" y="6529" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<line x1="20" x2="880" y1="6536" y2="6536" stroke="#eee"/>
+<text x="28" y="6568" font-family="sans-serif" font-size="12" fill="#222" >summarisation</text>
+<rect x="130" y="6540" width="469" height="11" fill="#4e79a7"/><text x="603" y="6549" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="6552" width="469" height="11" fill="#f28e2b"/><text x="603" y="6561" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="6564" width="469" height="11" fill="#59a14f"/><text x="603" y="6573" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="6576" width="469" height="11" fill="#e15759"/><text x="603" y="6585" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<line x1="20" x2="880" y1="6592" y2="6592" stroke="#eee"/>
+<text x="28" y="6624" font-family="sans-serif" font-size="12" fill="#222" >extraction</text>
+<rect x="130" y="6596" width="469" height="11" fill="#4e79a7"/><text x="603" y="6605" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="6608" width="469" height="11" fill="#f28e2b"/><text x="603" y="6617" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="6620" width="469" height="11" fill="#59a14f"/><text x="603" y="6629" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="6632" width="469" height="11" fill="#e15759"/><text x="603" y="6641" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<line x1="20" x2="880" y1="6648" y2="6648" stroke="#eee"/>
+<text x="28" y="6680" font-family="sans-serif" font-size="12" fill="#222" >code</text>
+<rect x="130" y="6652" width="0" height="11" fill="#4e79a7"/><text x="134" y="6661" font-family="sans-serif" fill="#222" font-size="9">0%</text>
+<rect x="130" y="6664" width="0" height="11" fill="#f28e2b"/><text x="134" y="6673" font-family="sans-serif" fill="#222" font-size="9">0%</text>
+<rect x="130" y="6676" width="119.00000000000001" height="11" fill="#59a14f"/><text x="253" y="6685" font-family="sans-serif" fill="#222" font-size="9">17%</text>
+<rect x="130" y="6688" width="119.00000000000001" height="11" fill="#e15759"/><text x="253" y="6697" font-family="sans-serif" fill="#222" font-size="9">17%</text>
+<line x1="20" x2="880" y1="6704" y2="6704" stroke="#eee"/>
+<text x="28" y="6736" font-family="sans-serif" font-size="12" fill="#222" >reasoning</text>
+<rect x="130" y="6708" width="420" height="11" fill="#4e79a7"/><text x="554" y="6717" font-family="sans-serif" fill="#222" font-size="9">60%</text>
+<rect x="130" y="6720" width="420" height="11" fill="#f28e2b"/><text x="554" y="6729" font-family="sans-serif" fill="#222" font-size="9">60%</text>
+<rect x="130" y="6732" width="420" height="11" fill="#59a14f"/><text x="554" y="6741" font-family="sans-serif" fill="#222" font-size="9">60%</text>
+<rect x="130" y="6744" width="420" height="11" fill="#e15759"/><text x="554" y="6753" font-family="sans-serif" fill="#222" font-size="9">60%</text>
+<line x1="20" x2="880" y1="6760" y2="6760" stroke="#eee"/>
+<line x1="130" x2="130" y1="6428" y2="6764" stroke="#e5e5e5"/>
+<line x1="305" x2="305" y1="6428" y2="6764" stroke="#e5e5e5"/>
+<line x1="480" x2="480" y1="6428" y2="6764" stroke="#e5e5e5"/>
+<line x1="655" x2="655" y1="6428" y2="6764" stroke="#e5e5e5"/>
+<line x1="830" x2="830" y1="6428" y2="6764" stroke="#e5e5e5"/>
+<rect x="20" y="6774" width="860" height="24" fill="#2f3b4c"/><text x="28" y="6790" font-family="sans-serif" font-weight="bold" fill="#fff" font-size="13">DIFFICULTY EXACT</text>
+<rect x="20" y="6804" width="860" height="18" fill="#dfe6ee"/><text x="28" y="6817" font-family="sans-serif" font-size="12" fill="#222" font-weight="bold">qwen3.5:2b</text>
+<text x="130" y="6817" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">0</text>
+<text x="305" y="6817" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">25</text>
+<text x="480" y="6817" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">50</text>
+<text x="655" y="6817" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">75</text>
+<text x="830" y="6817" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">100</text>
+<text x="28" y="6854" font-family="sans-serif" font-size="12" fill="#222" >chat</text>
+<rect x="130" y="6826" width="175" height="11" fill="#4e79a7"/><text x="309" y="6835" font-family="sans-serif" fill="#222" font-size="9">25%</text>
+<rect x="130" y="6838" width="175" height="11" fill="#f28e2b"/><text x="309" y="6847" font-family="sans-serif" fill="#222" font-size="9">25%</text>
+<rect x="130" y="6850" width="175" height="11" fill="#59a14f"/><text x="309" y="6859" font-family="sans-serif" fill="#222" font-size="9">25%</text>
+<rect x="130" y="6862" width="175" height="11" fill="#e15759"/><text x="309" y="6871" font-family="sans-serif" fill="#222" font-size="9">25%</text>
+<line x1="20" x2="880" y1="6878" y2="6878" stroke="#eee"/>
+<text x="28" y="6910" font-family="sans-serif" font-size="12" fill="#222" >translation</text>
+<rect x="130" y="6882" width="0" height="11" fill="#4e79a7"/><text x="134" y="6891" font-family="sans-serif" fill="#222" font-size="9">0%</text>
+<rect x="130" y="6894" width="0" height="11" fill="#f28e2b"/><text x="134" y="6903" font-family="sans-serif" fill="#222" font-size="9">0%</text>
+<rect x="130" y="6906" width="0" height="11" fill="#59a14f"/><text x="134" y="6915" font-family="sans-serif" fill="#222" font-size="9">0%</text>
+<rect x="130" y="6918" width="0" height="11" fill="#e15759"/><text x="134" y="6927" font-family="sans-serif" fill="#222" font-size="9">0%</text>
+<line x1="20" x2="880" y1="6934" y2="6934" stroke="#eee"/>
+<text x="28" y="6966" font-family="sans-serif" font-size="12" fill="#222" >summarisation</text>
+<rect x="130" y="6938" width="0" height="11" fill="#4e79a7"/><text x="134" y="6947" font-family="sans-serif" fill="#222" font-size="9">0%</text>
+<rect x="130" y="6950" width="0" height="11" fill="#f28e2b"/><text x="134" y="6959" font-family="sans-serif" fill="#222" font-size="9">0%</text>
+<rect x="130" y="6962" width="0" height="11" fill="#59a14f"/><text x="134" y="6971" font-family="sans-serif" fill="#222" font-size="9">0%</text>
+<rect x="130" y="6974" width="0" height="11" fill="#e15759"/><text x="134" y="6983" font-family="sans-serif" fill="#222" font-size="9">0%</text>
+<line x1="20" x2="880" y1="6990" y2="6990" stroke="#eee"/>
+<text x="28" y="7022" font-family="sans-serif" font-size="12" fill="#222" >extraction</text>
+<rect x="130" y="6994" width="0" height="11" fill="#4e79a7"/><text x="134" y="7003" font-family="sans-serif" fill="#222" font-size="9">0%</text>
+<rect x="130" y="7006" width="0" height="11" fill="#f28e2b"/><text x="134" y="7015" font-family="sans-serif" fill="#222" font-size="9">0%</text>
+<rect x="130" y="7018" width="0" height="11" fill="#59a14f"/><text x="134" y="7027" font-family="sans-serif" fill="#222" font-size="9">0%</text>
+<rect x="130" y="7030" width="0" height="11" fill="#e15759"/><text x="134" y="7039" font-family="sans-serif" fill="#222" font-size="9">0%</text>
+<line x1="20" x2="880" y1="7046" y2="7046" stroke="#eee"/>
+<text x="28" y="7078" font-family="sans-serif" font-size="12" fill="#222" >code</text>
+<rect x="130" y="7050" width="119.00000000000001" height="11" fill="#4e79a7"/><text x="253" y="7059" font-family="sans-serif" fill="#222" font-size="9">17%</text>
+<rect x="130" y="7062" width="119.00000000000001" height="11" fill="#f28e2b"/><text x="253" y="7071" font-family="sans-serif" fill="#222" font-size="9">17%</text>
+<rect x="130" y="7074" width="119.00000000000001" height="11" fill="#59a14f"/><text x="253" y="7083" font-family="sans-serif" fill="#222" font-size="9">17%</text>
+<rect x="130" y="7086" width="119.00000000000001" height="11" fill="#e15759"/><text x="253" y="7095" font-family="sans-serif" fill="#222" font-size="9">17%</text>
+<line x1="20" x2="880" y1="7102" y2="7102" stroke="#eee"/>
+<text x="28" y="7134" font-family="sans-serif" font-size="12" fill="#222" >reasoning</text>
+<rect x="130" y="7106" width="420" height="11" fill="#4e79a7"/><text x="554" y="7115" font-family="sans-serif" fill="#222" font-size="9">60%</text>
+<rect x="130" y="7118" width="420" height="11" fill="#f28e2b"/><text x="554" y="7127" font-family="sans-serif" fill="#222" font-size="9">60%</text>
+<rect x="130" y="7130" width="420" height="11" fill="#59a14f"/><text x="554" y="7139" font-family="sans-serif" fill="#222" font-size="9">60%</text>
+<rect x="130" y="7142" width="420" height="11" fill="#e15759"/><text x="554" y="7151" font-family="sans-serif" fill="#222" font-size="9">60%</text>
+<line x1="20" x2="880" y1="7158" y2="7158" stroke="#eee"/>
+<line x1="130" x2="130" y1="6826" y2="7162" stroke="#e5e5e5"/>
+<line x1="305" x2="305" y1="6826" y2="7162" stroke="#e5e5e5"/>
+<line x1="480" x2="480" y1="6826" y2="7162" stroke="#e5e5e5"/>
+<line x1="655" x2="655" y1="6826" y2="7162" stroke="#e5e5e5"/>
+<line x1="830" x2="830" y1="6826" y2="7162" stroke="#e5e5e5"/>
+<rect x="20" y="7172" width="860" height="18" fill="#dfe6ee"/><text x="28" y="7185" font-family="sans-serif" font-size="12" fill="#222" font-weight="bold">qwen3.5:4b</text>
+<text x="130" y="7185" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">0</text>
+<text x="305" y="7185" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">25</text>
+<text x="480" y="7185" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">50</text>
+<text x="655" y="7185" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">75</text>
+<text x="830" y="7185" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">100</text>
+<text x="28" y="7222" font-family="sans-serif" font-size="12" fill="#222" >chat</text>
+<rect x="130" y="7194" width="525" height="11" fill="#4e79a7"/><text x="659" y="7203" font-family="sans-serif" fill="#222" font-size="9">75%</text>
+<rect x="130" y="7206" width="525" height="11" fill="#f28e2b"/><text x="659" y="7215" font-family="sans-serif" fill="#222" font-size="9">75%</text>
+<rect x="130" y="7218" width="525" height="11" fill="#59a14f"/><text x="659" y="7227" font-family="sans-serif" fill="#222" font-size="9">75%</text>
+<rect x="130" y="7230" width="525" height="11" fill="#e15759"/><text x="659" y="7239" font-family="sans-serif" fill="#222" font-size="9">75%</text>
+<line x1="20" x2="880" y1="7246" y2="7246" stroke="#eee"/>
+<text x="28" y="7278" font-family="sans-serif" font-size="12" fill="#222" >translation</text>
+<rect x="130" y="7250" width="231" height="11" fill="#4e79a7"/><text x="365" y="7259" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<rect x="130" y="7262" width="231" height="11" fill="#f28e2b"/><text x="365" y="7271" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<rect x="130" y="7274" width="231" height="11" fill="#59a14f"/><text x="365" y="7283" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<rect x="130" y="7286" width="231" height="11" fill="#e15759"/><text x="365" y="7295" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<line x1="20" x2="880" y1="7302" y2="7302" stroke="#eee"/>
+<text x="28" y="7334" font-family="sans-serif" font-size="12" fill="#222" >summarisation</text>
+<rect x="130" y="7306" width="469" height="11" fill="#4e79a7"/><text x="603" y="7315" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="7318" width="469" height="11" fill="#f28e2b"/><text x="603" y="7327" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="7330" width="469" height="11" fill="#59a14f"/><text x="603" y="7339" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="7342" width="469" height="11" fill="#e15759"/><text x="603" y="7351" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<line x1="20" x2="880" y1="7358" y2="7358" stroke="#eee"/>
+<text x="28" y="7390" font-family="sans-serif" font-size="12" fill="#222" >extraction</text>
+<rect x="130" y="7362" width="469" height="11" fill="#4e79a7"/><text x="603" y="7371" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="7374" width="469" height="11" fill="#f28e2b"/><text x="603" y="7383" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="7386" width="469" height="11" fill="#59a14f"/><text x="603" y="7395" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="7398" width="469" height="11" fill="#e15759"/><text x="603" y="7407" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<line x1="20" x2="880" y1="7414" y2="7414" stroke="#eee"/>
+<text x="28" y="7446" font-family="sans-serif" font-size="12" fill="#222" >code</text>
+<rect x="130" y="7418" width="700" height="11" fill="#4e79a7"/><text x="834" y="7427" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="7430" width="700" height="11" fill="#f28e2b"/><text x="834" y="7439" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="7442" width="700" height="11" fill="#59a14f"/><text x="834" y="7451" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="7454" width="700" height="11" fill="#e15759"/><text x="834" y="7463" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<line x1="20" x2="880" y1="7470" y2="7470" stroke="#eee"/>
+<text x="28" y="7502" font-family="sans-serif" font-size="12" fill="#222" >reasoning</text>
+<rect x="130" y="7474" width="700" height="11" fill="#4e79a7"/><text x="834" y="7483" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="7486" width="700" height="11" fill="#f28e2b"/><text x="834" y="7495" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="7498" width="700" height="11" fill="#59a14f"/><text x="834" y="7507" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="7510" width="700" height="11" fill="#e15759"/><text x="834" y="7519" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<line x1="20" x2="880" y1="7526" y2="7526" stroke="#eee"/>
+<line x1="130" x2="130" y1="7194" y2="7530" stroke="#e5e5e5"/>
+<line x1="305" x2="305" y1="7194" y2="7530" stroke="#e5e5e5"/>
+<line x1="480" x2="480" y1="7194" y2="7530" stroke="#e5e5e5"/>
+<line x1="655" x2="655" y1="7194" y2="7530" stroke="#e5e5e5"/>
+<line x1="830" x2="830" y1="7194" y2="7530" stroke="#e5e5e5"/>
+<rect x="20" y="7540" width="860" height="18" fill="#dfe6ee"/><text x="28" y="7553" font-family="sans-serif" font-size="12" fill="#222" font-weight="bold">qwen2.5-coder:3b</text>
+<text x="130" y="7553" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">0</text>
+<text x="305" y="7553" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">25</text>
+<text x="480" y="7553" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">50</text>
+<text x="655" y="7553" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">75</text>
+<text x="830" y="7553" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">100</text>
+<text x="28" y="7590" font-family="sans-serif" font-size="12" fill="#222" >chat</text>
+<rect x="130" y="7562" width="700" height="11" fill="#4e79a7"/><text x="834" y="7571" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="7574" width="700" height="11" fill="#f28e2b"/><text x="834" y="7583" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="7586" width="700" height="11" fill="#59a14f"/><text x="834" y="7595" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="7598" width="700" height="11" fill="#e15759"/><text x="834" y="7607" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<line x1="20" x2="880" y1="7614" y2="7614" stroke="#eee"/>
+<text x="28" y="7646" font-family="sans-serif" font-size="12" fill="#222" >translation</text>
+<rect x="130" y="7618" width="231" height="11" fill="#4e79a7"/><text x="365" y="7627" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<rect x="130" y="7630" width="231" height="11" fill="#f28e2b"/><text x="365" y="7639" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<rect x="130" y="7642" width="231" height="11" fill="#59a14f"/><text x="365" y="7651" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<rect x="130" y="7654" width="231" height="11" fill="#e15759"/><text x="365" y="7663" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<line x1="20" x2="880" y1="7670" y2="7670" stroke="#eee"/>
+<text x="28" y="7702" font-family="sans-serif" font-size="12" fill="#222" >summarisation</text>
+<rect x="130" y="7674" width="0" height="11" fill="#4e79a7"/><text x="134" y="7683" font-family="sans-serif" fill="#222" font-size="9">0%</text>
+<rect x="130" y="7686" width="0" height="11" fill="#f28e2b"/><text x="134" y="7695" font-family="sans-serif" fill="#222" font-size="9">0%</text>
+<rect x="130" y="7698" width="0" height="11" fill="#59a14f"/><text x="134" y="7707" font-family="sans-serif" fill="#222" font-size="9">0%</text>
+<rect x="130" y="7710" width="0" height="11" fill="#e15759"/><text x="134" y="7719" font-family="sans-serif" fill="#222" font-size="9">0%</text>
+<line x1="20" x2="880" y1="7726" y2="7726" stroke="#eee"/>
+<text x="28" y="7758" font-family="sans-serif" font-size="12" fill="#222" >extraction</text>
+<rect x="130" y="7730" width="231" height="11" fill="#4e79a7"/><text x="365" y="7739" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<rect x="130" y="7742" width="231" height="11" fill="#f28e2b"/><text x="365" y="7751" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<rect x="130" y="7754" width="231" height="11" fill="#59a14f"/><text x="365" y="7763" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<rect x="130" y="7766" width="231" height="11" fill="#e15759"/><text x="365" y="7775" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<line x1="20" x2="880" y1="7782" y2="7782" stroke="#eee"/>
+<text x="28" y="7814" font-family="sans-serif" font-size="12" fill="#222" >code</text>
+<rect x="130" y="7786" width="581" height="11" fill="#4e79a7"/><text x="715" y="7795" font-family="sans-serif" fill="#222" font-size="9">83%</text>
+<rect x="130" y="7798" width="581" height="11" fill="#f28e2b"/><text x="715" y="7807" font-family="sans-serif" fill="#222" font-size="9">83%</text>
+<rect x="130" y="7810" width="581" height="11" fill="#59a14f"/><text x="715" y="7819" font-family="sans-serif" fill="#222" font-size="9">83%</text>
+<rect x="130" y="7822" width="581" height="11" fill="#e15759"/><text x="715" y="7831" font-family="sans-serif" fill="#222" font-size="9">83%</text>
+<line x1="20" x2="880" y1="7838" y2="7838" stroke="#eee"/>
+<text x="28" y="7870" font-family="sans-serif" font-size="12" fill="#222" >reasoning</text>
+<rect x="130" y="7842" width="420" height="11" fill="#4e79a7"/><text x="554" y="7851" font-family="sans-serif" fill="#222" font-size="9">60%</text>
+<rect x="130" y="7854" width="420" height="11" fill="#f28e2b"/><text x="554" y="7863" font-family="sans-serif" fill="#222" font-size="9">60%</text>
+<rect x="130" y="7866" width="420" height="11" fill="#59a14f"/><text x="554" y="7875" font-family="sans-serif" fill="#222" font-size="9">60%</text>
+<rect x="130" y="7878" width="420" height="11" fill="#e15759"/><text x="554" y="7887" font-family="sans-serif" fill="#222" font-size="9">60%</text>
+<line x1="20" x2="880" y1="7894" y2="7894" stroke="#eee"/>
+<line x1="130" x2="130" y1="7562" y2="7898" stroke="#e5e5e5"/>
+<line x1="305" x2="305" y1="7562" y2="7898" stroke="#e5e5e5"/>
+<line x1="480" x2="480" y1="7562" y2="7898" stroke="#e5e5e5"/>
+<line x1="655" x2="655" y1="7562" y2="7898" stroke="#e5e5e5"/>
+<line x1="830" x2="830" y1="7562" y2="7898" stroke="#e5e5e5"/>
+<rect x="20" y="7908" width="860" height="18" fill="#dfe6ee"/><text x="28" y="7921" font-family="sans-serif" font-size="12" fill="#222" font-weight="bold">llama3.2:3b</text>
+<text x="130" y="7921" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">0</text>
+<text x="305" y="7921" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">25</text>
+<text x="480" y="7921" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">50</text>
+<text x="655" y="7921" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">75</text>
+<text x="830" y="7921" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">100</text>
+<text x="28" y="7958" font-family="sans-serif" font-size="12" fill="#222" >chat</text>
+<rect x="130" y="7930" width="700" height="11" fill="#4e79a7"/><text x="834" y="7939" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="7942" width="700" height="11" fill="#f28e2b"/><text x="834" y="7951" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="7954" width="700" height="11" fill="#59a14f"/><text x="834" y="7963" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="7966" width="700" height="11" fill="#e15759"/><text x="834" y="7975" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<line x1="20" x2="880" y1="7982" y2="7982" stroke="#eee"/>
+<text x="28" y="8014" font-family="sans-serif" font-size="12" fill="#222" >translation</text>
+<rect x="130" y="7986" width="231" height="11" fill="#4e79a7"/><text x="365" y="7995" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<rect x="130" y="7998" width="231" height="11" fill="#f28e2b"/><text x="365" y="8007" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<rect x="130" y="8010" width="231" height="11" fill="#59a14f"/><text x="365" y="8019" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<rect x="130" y="8022" width="231" height="11" fill="#e15759"/><text x="365" y="8031" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<line x1="20" x2="880" y1="8038" y2="8038" stroke="#eee"/>
+<text x="28" y="8070" font-family="sans-serif" font-size="12" fill="#222" >summarisation</text>
+<rect x="130" y="8042" width="469" height="11" fill="#4e79a7"/><text x="603" y="8051" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="8054" width="469" height="11" fill="#f28e2b"/><text x="603" y="8063" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="8066" width="469" height="11" fill="#59a14f"/><text x="603" y="8075" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="8078" width="469" height="11" fill="#e15759"/><text x="603" y="8087" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<line x1="20" x2="880" y1="8094" y2="8094" stroke="#eee"/>
+<text x="28" y="8126" font-family="sans-serif" font-size="12" fill="#222" >extraction</text>
+<rect x="130" y="8098" width="231" height="11" fill="#4e79a7"/><text x="365" y="8107" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<rect x="130" y="8110" width="231" height="11" fill="#f28e2b"/><text x="365" y="8119" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<rect x="130" y="8122" width="231" height="11" fill="#59a14f"/><text x="365" y="8131" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<rect x="130" y="8134" width="231" height="11" fill="#e15759"/><text x="365" y="8143" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<line x1="20" x2="880" y1="8150" y2="8150" stroke="#eee"/>
+<text x="28" y="8182" font-family="sans-serif" font-size="12" fill="#222" >code</text>
+<rect x="130" y="8154" width="581" height="11" fill="#4e79a7"/><text x="715" y="8163" font-family="sans-serif" fill="#222" font-size="9">83%</text>
+<rect x="130" y="8166" width="581" height="11" fill="#f28e2b"/><text x="715" y="8175" font-family="sans-serif" fill="#222" font-size="9">83%</text>
+<rect x="130" y="8178" width="581" height="11" fill="#59a14f"/><text x="715" y="8187" font-family="sans-serif" fill="#222" font-size="9">83%</text>
+<rect x="130" y="8190" width="581" height="11" fill="#e15759"/><text x="715" y="8199" font-family="sans-serif" fill="#222" font-size="9">83%</text>
+<line x1="20" x2="880" y1="8206" y2="8206" stroke="#eee"/>
+<text x="28" y="8238" font-family="sans-serif" font-size="12" fill="#222" >reasoning</text>
+<rect x="130" y="8210" width="420" height="11" fill="#4e79a7"/><text x="554" y="8219" font-family="sans-serif" fill="#222" font-size="9">60%</text>
+<rect x="130" y="8222" width="420" height="11" fill="#f28e2b"/><text x="554" y="8231" font-family="sans-serif" fill="#222" font-size="9">60%</text>
+<rect x="130" y="8234" width="420" height="11" fill="#59a14f"/><text x="554" y="8243" font-family="sans-serif" fill="#222" font-size="9">60%</text>
+<rect x="130" y="8246" width="420" height="11" fill="#e15759"/><text x="554" y="8255" font-family="sans-serif" fill="#222" font-size="9">60%</text>
+<line x1="20" x2="880" y1="8262" y2="8262" stroke="#eee"/>
+<line x1="130" x2="130" y1="7930" y2="8266" stroke="#e5e5e5"/>
+<line x1="305" x2="305" y1="7930" y2="8266" stroke="#e5e5e5"/>
+<line x1="480" x2="480" y1="7930" y2="8266" stroke="#e5e5e5"/>
+<line x1="655" x2="655" y1="7930" y2="8266" stroke="#e5e5e5"/>
+<line x1="830" x2="830" y1="7930" y2="8266" stroke="#e5e5e5"/>
+<rect x="20" y="8276" width="860" height="18" fill="#dfe6ee"/><text x="28" y="8289" font-family="sans-serif" font-size="12" fill="#222" font-weight="bold">gemma3:4b</text>
+<text x="130" y="8289" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">0</text>
+<text x="305" y="8289" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">25</text>
+<text x="480" y="8289" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">50</text>
+<text x="655" y="8289" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">75</text>
+<text x="830" y="8289" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">100</text>
+<text x="28" y="8326" font-family="sans-serif" font-size="12" fill="#222" >chat</text>
+<rect x="130" y="8298" width="700" height="11" fill="#4e79a7"/><text x="834" y="8307" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="8310" width="700" height="11" fill="#f28e2b"/><text x="834" y="8319" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="8322" width="700" height="11" fill="#59a14f"/><text x="834" y="8331" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="8334" width="700" height="11" fill="#e15759"/><text x="834" y="8343" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<line x1="20" x2="880" y1="8350" y2="8350" stroke="#eee"/>
+<text x="28" y="8382" font-family="sans-serif" font-size="12" fill="#222" >translation</text>
+<rect x="130" y="8354" width="700" height="11" fill="#4e79a7"/><text x="834" y="8363" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="8366" width="469" height="11" fill="#f28e2b"/><text x="603" y="8375" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="8378" width="700" height="11" fill="#59a14f"/><text x="834" y="8387" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="8390" width="700" height="11" fill="#e15759"/><text x="834" y="8399" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<line x1="20" x2="880" y1="8406" y2="8406" stroke="#eee"/>
+<text x="28" y="8438" font-family="sans-serif" font-size="12" fill="#222" >summarisation</text>
+<rect x="130" y="8410" width="469" height="11" fill="#4e79a7"/><text x="603" y="8419" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="8422" width="469" height="11" fill="#f28e2b"/><text x="603" y="8431" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="8434" width="469" height="11" fill="#59a14f"/><text x="603" y="8443" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="8446" width="469" height="11" fill="#e15759"/><text x="603" y="8455" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<line x1="20" x2="880" y1="8462" y2="8462" stroke="#eee"/>
+<text x="28" y="8494" font-family="sans-serif" font-size="12" fill="#222" >extraction</text>
+<rect x="130" y="8466" width="469" height="11" fill="#4e79a7"/><text x="603" y="8475" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="8478" width="469" height="11" fill="#f28e2b"/><text x="603" y="8487" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="8490" width="469" height="11" fill="#59a14f"/><text x="603" y="8499" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="8502" width="469" height="11" fill="#e15759"/><text x="603" y="8511" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<line x1="20" x2="880" y1="8518" y2="8518" stroke="#eee"/>
+<text x="28" y="8550" font-family="sans-serif" font-size="12" fill="#222" >code</text>
+<rect x="130" y="8522" width="350" height="11" fill="#4e79a7"/><text x="484" y="8531" font-family="sans-serif" fill="#222" font-size="9">50%</text>
+<rect x="130" y="8534" width="581" height="11" fill="#f28e2b"/><text x="715" y="8543" font-family="sans-serif" fill="#222" font-size="9">83%</text>
+<rect x="130" y="8546" width="469" height="11" fill="#59a14f"/><text x="603" y="8555" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="8558" width="427" height="11" fill="#e15759"/><text x="561" y="8567" font-family="sans-serif" fill="#222" font-size="9">61%</text>
+<line x1="20" x2="880" y1="8574" y2="8574" stroke="#eee"/>
+<text x="28" y="8606" font-family="sans-serif" font-size="12" fill="#222" >reasoning</text>
+<rect x="130" y="8578" width="700" height="11" fill="#4e79a7"/><text x="834" y="8587" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="8590" width="700" height="11" fill="#f28e2b"/><text x="834" y="8599" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="8602" width="700" height="11" fill="#59a14f"/><text x="834" y="8611" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="8614" width="700" height="11" fill="#e15759"/><text x="834" y="8623" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<line x1="20" x2="880" y1="8630" y2="8630" stroke="#eee"/>
+<line x1="130" x2="130" y1="8298" y2="8634" stroke="#e5e5e5"/>
+<line x1="305" x2="305" y1="8298" y2="8634" stroke="#e5e5e5"/>
+<line x1="480" x2="480" y1="8298" y2="8634" stroke="#e5e5e5"/>
+<line x1="655" x2="655" y1="8298" y2="8634" stroke="#e5e5e5"/>
+<line x1="830" x2="830" y1="8298" y2="8634" stroke="#e5e5e5"/>
+<rect x="20" y="8644" width="860" height="18" fill="#dfe6ee"/><text x="28" y="8657" font-family="sans-serif" font-size="12" fill="#222" font-weight="bold">phi4-mini</text>
+<text x="130" y="8657" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">0</text>
+<text x="305" y="8657" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">25</text>
+<text x="480" y="8657" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">50</text>
+<text x="655" y="8657" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">75</text>
+<text x="830" y="8657" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">100</text>
+<text x="28" y="8694" font-family="sans-serif" font-size="12" fill="#222" >chat</text>
+<rect x="130" y="8666" width="700" height="11" fill="#4e79a7"/><text x="834" y="8675" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="8678" width="700" height="11" fill="#f28e2b"/><text x="834" y="8687" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="8690" width="700" height="11" fill="#59a14f"/><text x="834" y="8699" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="8702" width="700" height="11" fill="#e15759"/><text x="834" y="8711" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<line x1="20" x2="880" y1="8718" y2="8718" stroke="#eee"/>
+<text x="28" y="8750" font-family="sans-serif" font-size="12" fill="#222" >translation</text>
+<rect x="130" y="8722" width="700" height="11" fill="#4e79a7"/><text x="834" y="8731" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="8734" width="700" height="11" fill="#f28e2b"/><text x="834" y="8743" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="8746" width="231" height="11" fill="#59a14f"/><text x="365" y="8755" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<rect x="130" y="8758" width="231" height="11" fill="#e15759"/><text x="365" y="8767" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<line x1="20" x2="880" y1="8774" y2="8774" stroke="#eee"/>
+<text x="28" y="8806" font-family="sans-serif" font-size="12" fill="#222" >summarisation</text>
+<rect x="130" y="8778" width="700" height="11" fill="#4e79a7"/><text x="834" y="8787" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="8790" width="700" height="11" fill="#f28e2b"/><text x="834" y="8799" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="8802" width="700" height="11" fill="#59a14f"/><text x="834" y="8811" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="8814" width="700" height="11" fill="#e15759"/><text x="834" y="8823" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<line x1="20" x2="880" y1="8830" y2="8830" stroke="#eee"/>
+<text x="28" y="8862" font-family="sans-serif" font-size="12" fill="#222" >extraction</text>
+<rect x="130" y="8834" width="469" height="11" fill="#4e79a7"/><text x="603" y="8843" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="8846" width="469" height="11" fill="#f28e2b"/><text x="603" y="8855" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="8858" width="469" height="11" fill="#59a14f"/><text x="603" y="8867" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="8870" width="469" height="11" fill="#e15759"/><text x="603" y="8879" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<line x1="20" x2="880" y1="8886" y2="8886" stroke="#eee"/>
+<text x="28" y="8918" font-family="sans-serif" font-size="12" fill="#222" >code</text>
+<rect x="130" y="8890" width="469" height="11" fill="#4e79a7"/><text x="603" y="8899" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="8902" width="469" height="11" fill="#f28e2b"/><text x="603" y="8911" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="8914" width="700" height="11" fill="#59a14f"/><text x="834" y="8923" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="8926" width="700" height="11" fill="#e15759"/><text x="834" y="8935" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<line x1="20" x2="880" y1="8942" y2="8942" stroke="#eee"/>
+<text x="28" y="8974" font-family="sans-serif" font-size="12" fill="#222" >reasoning</text>
+<rect x="130" y="8946" width="420" height="11" fill="#4e79a7"/><text x="554" y="8955" font-family="sans-serif" fill="#222" font-size="9">60%</text>
+<rect x="130" y="8958" width="420" height="11" fill="#f28e2b"/><text x="554" y="8967" font-family="sans-serif" fill="#222" font-size="9">60%</text>
+<rect x="130" y="8970" width="560" height="11" fill="#59a14f"/><text x="694" y="8979" font-family="sans-serif" fill="#222" font-size="9">80%</text>
+<rect x="130" y="8982" width="560" height="11" fill="#e15759"/><text x="694" y="8991" font-family="sans-serif" fill="#222" font-size="9">80%</text>
+<line x1="20" x2="880" y1="8998" y2="8998" stroke="#eee"/>
+<line x1="130" x2="130" y1="8666" y2="9002" stroke="#e5e5e5"/>
+<line x1="305" x2="305" y1="8666" y2="9002" stroke="#e5e5e5"/>
+<line x1="480" x2="480" y1="8666" y2="9002" stroke="#e5e5e5"/>
+<line x1="655" x2="655" y1="8666" y2="9002" stroke="#e5e5e5"/>
+<line x1="830" x2="830" y1="8666" y2="9002" stroke="#e5e5e5"/>
+<rect x="20" y="9012" width="860" height="18" fill="#dfe6ee"/><text x="28" y="9025" font-family="sans-serif" font-size="12" fill="#222" font-weight="bold">granite3.3:2b</text>
+<text x="130" y="9025" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">0</text>
+<text x="305" y="9025" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">25</text>
+<text x="480" y="9025" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">50</text>
+<text x="655" y="9025" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">75</text>
+<text x="830" y="9025" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">100</text>
+<text x="28" y="9062" font-family="sans-serif" font-size="12" fill="#222" >chat</text>
+<rect x="130" y="9034" width="350" height="11" fill="#4e79a7"/><text x="484" y="9043" font-family="sans-serif" fill="#222" font-size="9">50%</text>
+<rect x="130" y="9046" width="350" height="11" fill="#f28e2b"/><text x="484" y="9055" font-family="sans-serif" fill="#222" font-size="9">50%</text>
+<rect x="130" y="9058" width="350" height="11" fill="#59a14f"/><text x="484" y="9067" font-family="sans-serif" fill="#222" font-size="9">50%</text>
+<rect x="130" y="9070" width="350" height="11" fill="#e15759"/><text x="484" y="9079" font-family="sans-serif" fill="#222" font-size="9">50%</text>
+<line x1="20" x2="880" y1="9086" y2="9086" stroke="#eee"/>
+<text x="28" y="9118" font-family="sans-serif" font-size="12" fill="#222" >translation</text>
+<rect x="130" y="9090" width="469" height="11" fill="#4e79a7"/><text x="603" y="9099" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="9102" width="469" height="11" fill="#f28e2b"/><text x="603" y="9111" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="9114" width="469" height="11" fill="#59a14f"/><text x="603" y="9123" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="9126" width="469" height="11" fill="#e15759"/><text x="603" y="9135" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<line x1="20" x2="880" y1="9142" y2="9142" stroke="#eee"/>
+<text x="28" y="9174" font-family="sans-serif" font-size="12" fill="#222" >summarisation</text>
+<rect x="130" y="9146" width="231" height="11" fill="#4e79a7"/><text x="365" y="9155" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<rect x="130" y="9158" width="231" height="11" fill="#f28e2b"/><text x="365" y="9167" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<rect x="130" y="9170" width="231" height="11" fill="#59a14f"/><text x="365" y="9179" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<rect x="130" y="9182" width="231" height="11" fill="#e15759"/><text x="365" y="9191" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<line x1="20" x2="880" y1="9198" y2="9198" stroke="#eee"/>
+<text x="28" y="9230" font-family="sans-serif" font-size="12" fill="#222" >extraction</text>
+<rect x="130" y="9202" width="231" height="11" fill="#4e79a7"/><text x="365" y="9211" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<rect x="130" y="9214" width="231" height="11" fill="#f28e2b"/><text x="365" y="9223" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<rect x="130" y="9226" width="231" height="11" fill="#59a14f"/><text x="365" y="9235" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<rect x="130" y="9238" width="231" height="11" fill="#e15759"/><text x="365" y="9247" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<line x1="20" x2="880" y1="9254" y2="9254" stroke="#eee"/>
+<text x="28" y="9286" font-family="sans-serif" font-size="12" fill="#222" >code</text>
+<rect x="130" y="9258" width="231" height="11" fill="#4e79a7"/><text x="365" y="9267" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<rect x="130" y="9270" width="231" height="11" fill="#f28e2b"/><text x="365" y="9279" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<rect x="130" y="9282" width="231" height="11" fill="#59a14f"/><text x="365" y="9291" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<rect x="130" y="9294" width="231" height="11" fill="#e15759"/><text x="365" y="9303" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<line x1="20" x2="880" y1="9310" y2="9310" stroke="#eee"/>
+<text x="28" y="9342" font-family="sans-serif" font-size="12" fill="#222" >reasoning</text>
+<rect x="130" y="9314" width="560" height="11" fill="#4e79a7"/><text x="694" y="9323" font-family="sans-serif" fill="#222" font-size="9">80%</text>
+<rect x="130" y="9326" width="560" height="11" fill="#f28e2b"/><text x="694" y="9335" font-family="sans-serif" fill="#222" font-size="9">80%</text>
+<rect x="130" y="9338" width="560" height="11" fill="#59a14f"/><text x="694" y="9347" font-family="sans-serif" fill="#222" font-size="9">80%</text>
+<rect x="130" y="9350" width="560" height="11" fill="#e15759"/><text x="694" y="9359" font-family="sans-serif" fill="#222" font-size="9">80%</text>
+<line x1="20" x2="880" y1="9366" y2="9366" stroke="#eee"/>
+<line x1="130" x2="130" y1="9034" y2="9370" stroke="#e5e5e5"/>
+<line x1="305" x2="305" y1="9034" y2="9370" stroke="#e5e5e5"/>
+<line x1="480" x2="480" y1="9034" y2="9370" stroke="#e5e5e5"/>
+<line x1="655" x2="655" y1="9034" y2="9370" stroke="#e5e5e5"/>
+<line x1="830" x2="830" y1="9034" y2="9370" stroke="#e5e5e5"/>
+<rect x="20" y="9380" width="860" height="18" fill="#dfe6ee"/><text x="28" y="9393" font-family="sans-serif" font-size="12" fill="#222" font-weight="bold">qwen3:4b</text>
+<text x="130" y="9393" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">0</text>
+<text x="305" y="9393" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">25</text>
+<text x="480" y="9393" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">50</text>
+<text x="655" y="9393" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">75</text>
+<text x="830" y="9393" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">100</text>
+<text x="28" y="9430" font-family="sans-serif" font-size="12" fill="#222" >chat</text>
+<rect x="130" y="9402" width="700" height="11" fill="#4e79a7"/><text x="834" y="9411" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="9414" width="700" height="11" fill="#f28e2b"/><text x="834" y="9423" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="9426" width="700" height="11" fill="#59a14f"/><text x="834" y="9435" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="9438" width="700" height="11" fill="#e15759"/><text x="834" y="9447" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<line x1="20" x2="880" y1="9454" y2="9454" stroke="#eee"/>
+<text x="28" y="9486" font-family="sans-serif" font-size="12" fill="#222" >translation</text>
+<rect x="130" y="9458" width="308" height="11" fill="#4e79a7"/><text x="442" y="9467" font-family="sans-serif" fill="#222" font-size="9">44%</text>
+<rect x="130" y="9470" width="469" height="11" fill="#f28e2b"/><text x="603" y="9479" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="9482" width="469" height="11" fill="#59a14f"/><text x="603" y="9491" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="9494" width="469" height="11" fill="#e15759"/><text x="603" y="9503" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<line x1="20" x2="880" y1="9510" y2="9510" stroke="#eee"/>
+<text x="28" y="9542" font-family="sans-serif" font-size="12" fill="#222" >summarisation</text>
+<rect x="130" y="9514" width="469" height="11" fill="#4e79a7"/><text x="603" y="9523" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="9526" width="469" height="11" fill="#f28e2b"/><text x="603" y="9535" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="9538" width="469" height="11" fill="#59a14f"/><text x="603" y="9547" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="9550" width="469" height="11" fill="#e15759"/><text x="603" y="9559" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<line x1="20" x2="880" y1="9566" y2="9566" stroke="#eee"/>
+<text x="28" y="9598" font-family="sans-serif" font-size="12" fill="#222" >extraction</text>
+<rect x="130" y="9570" width="231" height="11" fill="#4e79a7"/><text x="365" y="9579" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<rect x="130" y="9582" width="392.00000000000006" height="11" fill="#f28e2b"/><text x="526" y="9591" font-family="sans-serif" fill="#222" font-size="9">56%</text>
+<rect x="130" y="9594" width="308" height="11" fill="#59a14f"/><text x="442" y="9603" font-family="sans-serif" fill="#222" font-size="9">44%</text>
+<rect x="130" y="9606" width="231" height="11" fill="#e15759"/><text x="365" y="9615" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<line x1="20" x2="880" y1="9622" y2="9622" stroke="#eee"/>
+<text x="28" y="9654" font-family="sans-serif" font-size="12" fill="#222" >code</text>
+<rect x="130" y="9626" width="581" height="11" fill="#4e79a7"/><text x="715" y="9635" font-family="sans-serif" fill="#222" font-size="9">83%</text>
+<rect x="130" y="9638" width="581" height="11" fill="#f28e2b"/><text x="715" y="9647" font-family="sans-serif" fill="#222" font-size="9">83%</text>
+<rect x="130" y="9650" width="581" height="11" fill="#59a14f"/><text x="715" y="9659" font-family="sans-serif" fill="#222" font-size="9">83%</text>
+<rect x="130" y="9662" width="581" height="11" fill="#e15759"/><text x="715" y="9671" font-family="sans-serif" fill="#222" font-size="9">83%</text>
+<line x1="20" x2="880" y1="9678" y2="9678" stroke="#eee"/>
+<text x="28" y="9710" font-family="sans-serif" font-size="12" fill="#222" >reasoning</text>
+<rect x="130" y="9682" width="469" height="11" fill="#4e79a7"/><text x="603" y="9691" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="9694" width="420" height="11" fill="#f28e2b"/><text x="554" y="9703" font-family="sans-serif" fill="#222" font-size="9">60%</text>
+<rect x="130" y="9706" width="420" height="11" fill="#59a14f"/><text x="554" y="9715" font-family="sans-serif" fill="#222" font-size="9">60%</text>
+<rect x="130" y="9718" width="469" height="11" fill="#e15759"/><text x="603" y="9727" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<line x1="20" x2="880" y1="9734" y2="9734" stroke="#eee"/>
+<line x1="130" x2="130" y1="9402" y2="9738" stroke="#e5e5e5"/>
+<line x1="305" x2="305" y1="9402" y2="9738" stroke="#e5e5e5"/>
+<line x1="480" x2="480" y1="9402" y2="9738" stroke="#e5e5e5"/>
+<line x1="655" x2="655" y1="9402" y2="9738" stroke="#e5e5e5"/>
+<line x1="830" x2="830" y1="9402" y2="9738" stroke="#e5e5e5"/>
+<rect x="20" y="9748" width="860" height="18" fill="#dfe6ee"/><text x="28" y="9761" font-family="sans-serif" font-size="12" fill="#222" font-weight="bold">mistral:7b</text>
+<text x="130" y="9761" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">0</text>
+<text x="305" y="9761" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">25</text>
+<text x="480" y="9761" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">50</text>
+<text x="655" y="9761" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">75</text>
+<text x="830" y="9761" font-family="sans-serif" text-anchor="middle" font-size="9" fill="#666">100</text>
+<text x="28" y="9798" font-family="sans-serif" font-size="12" fill="#222" >chat</text>
+<rect x="130" y="9770" width="700" height="11" fill="#4e79a7"/><text x="834" y="9779" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="9782" width="700" height="11" fill="#f28e2b"/><text x="834" y="9791" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="9794" width="700" height="11" fill="#59a14f"/><text x="834" y="9803" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<rect x="130" y="9806" width="700" height="11" fill="#e15759"/><text x="834" y="9815" font-family="sans-serif" fill="#222" font-size="9">100%</text>
+<line x1="20" x2="880" y1="9822" y2="9822" stroke="#eee"/>
+<text x="28" y="9854" font-family="sans-serif" font-size="12" fill="#222" >translation</text>
+<rect x="130" y="9826" width="231" height="11" fill="#4e79a7"/><text x="365" y="9835" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<rect x="130" y="9838" width="231" height="11" fill="#f28e2b"/><text x="365" y="9847" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<rect x="130" y="9850" width="231" height="11" fill="#59a14f"/><text x="365" y="9859" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<rect x="130" y="9862" width="231" height="11" fill="#e15759"/><text x="365" y="9871" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<line x1="20" x2="880" y1="9878" y2="9878" stroke="#eee"/>
+<text x="28" y="9910" font-family="sans-serif" font-size="12" fill="#222" >summarisation</text>
+<rect x="130" y="9882" width="231" height="11" fill="#4e79a7"/><text x="365" y="9891" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<rect x="130" y="9894" width="231" height="11" fill="#f28e2b"/><text x="365" y="9903" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<rect x="130" y="9906" width="231" height="11" fill="#59a14f"/><text x="365" y="9915" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<rect x="130" y="9918" width="231" height="11" fill="#e15759"/><text x="365" y="9927" font-family="sans-serif" fill="#222" font-size="9">33%</text>
+<line x1="20" x2="880" y1="9934" y2="9934" stroke="#eee"/>
+<text x="28" y="9966" font-family="sans-serif" font-size="12" fill="#222" >extraction</text>
+<rect x="130" y="9938" width="469" height="11" fill="#4e79a7"/><text x="603" y="9947" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="9950" width="469" height="11" fill="#f28e2b"/><text x="603" y="9959" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="9962" width="469" height="11" fill="#59a14f"/><text x="603" y="9971" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<rect x="130" y="9974" width="469" height="11" fill="#e15759"/><text x="603" y="9983" font-family="sans-serif" fill="#222" font-size="9">67%</text>
+<line x1="20" x2="880" y1="9990" y2="9990" stroke="#eee"/>
+<text x="28" y="10022" font-family="sans-serif" font-size="12" fill="#222" >code</text>
+<rect x="130" y="9994" width="350" height="11" fill="#4e79a7"/><text x="484" y="10003" font-family="sans-serif" fill="#222" font-size="9">50%</text>
+<rect x="130" y="10006" width="350" height="11" fill="#f28e2b"/><text x="484" y="10015" font-family="sans-serif" fill="#222" font-size="9">50%</text>
+<rect x="130" y="10018" width="350" height="11" fill="#59a14f"/><text x="484" y="10027" font-family="sans-serif" fill="#222" font-size="9">50%</text>
+<rect x="130" y="10030" width="350" height="11" fill="#e15759"/><text x="484" y="10039" font-family="sans-serif" fill="#222" font-size="9">50%</text>
+<line x1="20" x2="880" y1="10046" y2="10046" stroke="#eee"/>
+<text x="28" y="10078" font-family="sans-serif" font-size="12" fill="#222" >reasoning</text>
+<rect x="130" y="10050" width="420" height="11" fill="#4e79a7"/><text x="554" y="10059" font-family="sans-serif" fill="#222" font-size="9">60%</text>
+<rect x="130" y="10062" width="420" height="11" fill="#f28e2b"/><text x="554" y="10071" font-family="sans-serif" fill="#222" font-size="9">60%</text>
+<rect x="130" y="10074" width="420" height="11" fill="#59a14f"/><text x="554" y="10083" font-family="sans-serif" fill="#222" font-size="9">60%</text>
+<rect x="130" y="10086" width="420" height="11" fill="#e15759"/><text x="554" y="10095" font-family="sans-serif" fill="#222" font-size="9">60%</text>
+<line x1="20" x2="880" y1="10102" y2="10102" stroke="#eee"/>
+<line x1="130" x2="130" y1="9770" y2="10106" stroke="#e5e5e5"/>
+<line x1="305" x2="305" y1="9770" y2="10106" stroke="#e5e5e5"/>
+<line x1="480" x2="480" y1="9770" y2="10106" stroke="#e5e5e5"/>
+<line x1="655" x2="655" y1="9770" y2="10106" stroke="#e5e5e5"/>
+<line x1="830" x2="830" y1="9770" y2="10106" stroke="#e5e5e5"/>
+</svg>
